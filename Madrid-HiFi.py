@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import json
 
 # URL de la página que deseas analizar
+print("======================================================================")
+print("                 Bienvenido a Madrid HiFi Web Scraper")
+print("======================================================================")
 query = input("Introduce la marca de la que deseas obtener información: ")
 url = 'https://www.madridhifi.com/m/' + query + '/'
 base_url = 'https://www.madridhifi.com'
@@ -118,7 +121,7 @@ if response.status_code == 200:
             continue
         
     # Guardar la lista de productos en un archivo JSON
-    with open(query + '.json', 'w', encoding='utf-8') as f:
+    with open('data/' + query + '.json', 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=4)
     print("Información de productos guardada en " + query + ".json")
 else:
