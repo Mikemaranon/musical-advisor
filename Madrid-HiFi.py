@@ -121,7 +121,7 @@ if response.status_code == 200:
             continue
         
     # Guardar la lista de productos en un archivo JSON
-    with open('data/' + query + '.json', 'w', encoding='utf-8') as f:
+    with open('hifi-data/' + query + '.json', 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=4)
     print("Información de productos guardada en " + query + ".json")
 else:

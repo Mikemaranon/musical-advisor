@@ -32,47 +32,81 @@ if response.status_code == 200:
     
     # Buscar todos los productos en la página
     product_cards = soup.find_all('div', class_='fx-product-list-entry')
-    
-    products = []
-
-    with open(url, "r", encoding="utf-8") as file:
-        soup = BeautifulSoup(file, "html.parser")
 
     products = []
 
     for product in product_cards:
         try:
             # Obtener el título del producto
-            title_tag = product.find("div", class_="product__title")
-            title = title_tag.text.strip() if title_tag else "none"
+            title_brand = product.find("span", class_="title__manufacturer")
+            title_brand = title_brand.text.strip() if title_brand else ""
+            title_tag = product.find("span", class_="title__name")
+            title_tag = title_tag.text.strip() if title_tag else "none"
+            title = title_brand + " " + title_tag
+
+            print(title)
             
             # Obtener el precio actual
-            price = product.find('span', class_='fx-typography-price-primary').get_text(strip=True)
-            price = price.replace('€', '').strip()
-            if ',' not in price:
+            price_st = product.find('span', class_='fx-typography-price-primary fx-price-group__primary product__price-primary').get_text(strip=True)
+            price = price_st.replace('€', '').strip()
+            if ',' not in price and price != "":
                 price += ',00'
             
-            # Extraer el precio antiguo (tachado)
-            old_price = soup.select_one(".fx-typography-price-secondary--strike").text.strip()
-            old_price = old_price.replace('€', '').strip()
-            if ',' not in old_price:
-                old_price += ',00'
+            print(price)
             
+            # Extraer el precio antiguo (tachado)
+            try: 
+                old_price = soup.find('span', class_="fx-typography-price-secondary fx-typography-price-secondary--strike fx-price-group__strike product__price-strike").text.strip()
+                old_price = old_price.replace('€', '').strip()
+                if ',' not in old_price:
+                    old_price += ',00'
+            except:
+                old_price = "No disponible"
+            
+            print(old_price)
+            
+            # Obtener la disponibilidad del producto
             availability = product.find("span", class_="fx-availability")
             availability = availability.text.strip() if availability else "none"
             
-            url = product.find("a", class_="product__content no-underline")
-            url = url["href"] if url else "none"
+            print(availability)
+            
+            # Obtener el enlace al producto
+            product_url = product.find("a", class_="product__content no-underline")
+            product_url = product_url["href"] if product_url else "none"
+            
+            print(product_url)
             
             # No hay información directa sobre la reducción de precio y la fecha de entrega
             price_reduction = "none"
-            delivery_date = "none"
+            delivery_date = "unknown"
             
-            # Clasificación del producto (debe implementarse una lógica personalizada)
-            type_tags = []  # Aquí se puede agregar una lógica basada en el título o descripción
+            # Clasificación del producto
+            product_type = []
+            for keyword in keywords:
+                if keyword.lower() in title.lower():
+                    product_type.append(keyword)
             
-            # Características (No disponibles en este HTML)
-            features = []
+            price += ' €'    
+            old_price += ' €' 
+            
+            print("hasta aquí todo bien")
+            
+            # Características del producto
+            features = []            
+            product_response = requests.get(product_url)
+            if product_response.status_code == 200:
+                # Parsear el HTML
+                soup = BeautifulSoup(product_response.text, 'html.parser')
+                
+                # Encontrar la lista con las características del producto
+                texto_completo_div = soup.find('div', class_='text-original js-prod-text-original ')
+                features_list = texto_completo_div.find('ul')
+                
+                # Extraer y analizar cada elemento de la lista
+                features = [item.text for item in features_list.find_all('li')]
+            else:
+                description = 'No disponible'
             
             product_info = {
                 "title": title,
@@ -81,8 +115,8 @@ if response.status_code == 200:
                 "price_reduction": price_reduction,
                 "availability": availability,
                 "delivery_date": delivery_date,
-                "url": url,
-                "type": type_tags,
+                "url": product_url,
+                "type": product_type,
                 "features": features
             }
             
@@ -93,7 +127,7 @@ if response.status_code == 200:
             print(f"Error procesando el producto: {e}")
             continue
     # Guardar la lista de productos en un archivo JSON
-    with open('data/' + query + '.json', 'w', encoding='utf-8') as f:
+    with open('thomann-data/' + query + '.json', 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=4)
     print("Información de productos guardada en " + query + ".json")
 else:
