@@ -18,6 +18,20 @@ def generate_intent_examples(product):
             # Evitar agregar duplicados en los valores
             if product["title"] not in existing_intent["entities"][0]["values"]:
                 existing_intent["entities"][0]["values"].append(product["title"])
+                product_title_question = [
+                    f"¿Qué opinas de la {product['title']}?",
+                    f"¿Vale la pena comprar la {product['title']}?",
+                    f"¿Es la {product['title']} buena para principiantes?",
+                    f"¿Qué características tiene la {product['title']}?",
+                    f"¿Dónde puedo conseguir la {product['title']}?",
+                    f"¿La {product['title']} tiene buen precio?",
+                    f"¿Qué tal su rendimiento la {product['title']}?",
+                    f"¿La {product['title']} es recomendable para su uso?",
+                    f"¿Es duradera la {product['title']}?",
+                    f"¿La {product['title']} tiene buenas críticas?"
+                ]
+                for question in product_title_question:
+                    existing_intent["examples"].append(question)
         else:
             # Crear nuevo intent
             intents_data.append({
@@ -27,7 +41,17 @@ def generate_intent_examples(product):
                     f"¿Cuál es el mejor {t}?",
                     f"¿Qué {t} tiene un buen precio?",
                     f"¿Me puedes recomendar una {t} de buena calidad?",
-                    f"¿Qué {t} tiene más funciones?"
+                    f"¿Qué {t} tiene más funciones?",
+                    f"¿Qué opinas de la {product['title']}?",
+                    f"¿Vale la pena comprar la {product['title']}?",
+                    f"¿Es la {product['title']} buena para principiantes?",
+                    f"¿Qué características tiene la {product['title']}?",
+                    f"¿Dónde puedo conseguir la {product['title']}?",
+                    f"¿La {product['title']} tiene buen precio?",
+                    f"¿Qué tal su rendimiento la {product['title']}?",
+                    f"¿La {product['title']} es recomendable para su uso?",
+                    f"¿Es duradera la {product['title']}?",
+                    f"¿La {product['title']} tiene buenas críticas?"
                 ],
                 "entities": [
                     {
@@ -53,10 +77,7 @@ def create_conversational_file(intents_data):
                 new_entity = {
                     "category": entity_category,
                     "compositionSetting": "separateComponents",
-                    "list": {"sublists": []},
-                    "prebuilts": [],
-                    "regex": {"expressions": []},
-                    "requiredComponents": []
+                    "list": {"sublists": []}
                 }
                 clu_template["assets"]["entities"].append(new_entity)
                 existing_entity = new_entity
@@ -70,7 +91,7 @@ def create_conversational_file(intents_data):
                         "listKey": value,
                         "synonyms": [
                             {
-                                "language": "español",
+                                "language": "es",
                                 "values": [value]
                             }
                         ]
@@ -93,8 +114,8 @@ def create_conversational_file(intents_data):
             clu_template["assets"]["utterances"].append({
                 "text": example,
                 "intent": intent["intent"],
-                "language": "español",
-                "dataset": "default",
+                "language": "es",
+                "dataset": "train",
                 "entities": entity_positions
             })
 
@@ -104,13 +125,14 @@ def create_conversational_file(intents_data):
 for product in products:
     generate_intent_examples(product)
 
+# Guardar archivo JSON de intents
+with open('training-data/structured-entities.json', 'w', encoding='utf-8') as f:
+    json.dump(intents_data, f, ensure_ascii=False, indent=4)
+    
 # Crear JSON de CLU solo una vez después del bucle
 clu_project = create_conversational_file(intents_data)
 
-# Guardar archivos
-with open('training-data/structured-entities.json', 'w', encoding='utf-8') as f:
-    json.dump(intents_data, f, ensure_ascii=False, indent=4)
-
+# Guardar archivo CLU
 with open('training-data/clu_project.json', 'w', encoding='utf-8') as f:
     json.dump(clu_project, f, ensure_ascii=False, indent=4)
 

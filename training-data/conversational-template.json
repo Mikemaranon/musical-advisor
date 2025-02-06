@@ -6,7 +6,7 @@
         "projectName": "musical-advisor",
         "multilingual": "true",
         "description": "Un chatbot que te ayudará a encontrar el instrumento adecuado para ti",
-        "language": "español",
+        "language": "es",
         "settings": {
             "confidenceThreshold": 0
         }
