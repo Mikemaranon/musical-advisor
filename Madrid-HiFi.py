@@ -11,15 +11,11 @@ url = 'https://www.madridhifi.com/m/' + query + '/'
 base_url = 'https://www.madridhifi.com'
 # Lista de palabras clave para identificar el tipo de producto
 keywords = [
-    'guitarra', 'bajo', 'pedal guitarra', 'cuerdas', 'ukelele',
-    'pedal bajo', 'funda', 'funda guitarra electrica', 
-    'funda guitarra acustica', 'funda bajo', 'signature',
-    'amplificador', 'cable', 'correa', 'pua', 'pedal'
-    'pastilla', 'pedalera', 'saxofon', 'trompeta',
-    'bateria', 'bateria electronica', 'cajon',
-    'piano', 'teclado', 'microfono', 'altavoz',
-    'auriculares', 'mezclador', 'interface audio',
-    'sintetizador', 'pedal efectos', 'banqueta piano',
+    'guitarra', 'bajo', 'pedal', 'cuerdas', 'ukelele', 'banqueta',
+    'funda', 'funda', 'signature', 'trompeta', 'saxofon', 'altavoz',
+    'amplificador', 'cable', 'correa', 'pua', 'pastilla', 'pedalera', 
+    'bateria', 'cajon', 'piano', 'teclado', 'microfono', 'sintetizador' 
+    'auriculares', 'mezclador',
 ]
 
 # Realizar la solicitud a la página
@@ -79,7 +75,12 @@ if response.status_code == 200:
             product_type = []
             for keyword in keywords:
                 if keyword.lower() in title.lower():
-                    product_type.append(keyword)
+                    product_type.append(keyword.lower())  # Usar add para evitar duplicados
+            
+            # Elimina 'guitarra' o 'bajo' si están presentes
+            if len(product_type) > 1:
+                product_type.remove('guitarra')  
+                product_type.remove('bajo')
             
             price += ' €'    
             old_price += ' €'    
