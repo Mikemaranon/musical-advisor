@@ -1,0 +1,20 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "projectName": "musical-advisor",
+        "multilingual": "true",
+        "description": "Un chatbot que te ayudará a encontrar el instrumento adecuado para ti",
+        "language": "español",
+        "settings": {
+            "confidenceThreshold": 0
+        }
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [],
+        "entities": [],
+        "utterances": []
+    }
+}
