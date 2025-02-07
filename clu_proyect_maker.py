@@ -4,7 +4,7 @@ import json
 with open('hifi-data/ibanez.json', 'r', encoding='utf-8') as file:
     products = json.load(file)
     
-with open('training-data/conversational-template.json', 'r', encoding='utf-8') as file:
+with open('azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
     clu_template = json.load(file)
 
 intents_data = []
@@ -126,14 +126,14 @@ for product in products:
     generate_intent_examples(product)
 
 # Guardar archivo JSON de intents
-with open('training-data/structured-entities.json', 'w', encoding='utf-8') as f:
+with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
     json.dump(intents_data, f, ensure_ascii=False, indent=4)
     
 # Crear JSON de CLU solo una vez después del bucle
 clu_project = create_conversational_file(intents_data)
 
 # Guardar archivo CLU
-with open('training-data/clu_project.json', 'w', encoding='utf-8') as f:
+with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
     json.dump(clu_project, f, ensure_ascii=False, indent=4)
 
 print("Archivos generados correctamente.")
