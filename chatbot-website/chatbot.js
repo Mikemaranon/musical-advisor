@@ -35,6 +35,47 @@ document.addEventListener('DOMContentLoaded', function() {
         chatBox.appendChild(messageElement);
         chatBox.scrollTop = chatBox.scrollHeight;
     }
+
+    // read ../azure-qna/questions.json
+    fetch('../azure-qna/questions.json')
+    .then(response => response.json()) // Convierte la respuesta a formato JSON
+    .then(data => {
+        console.log('Archivo JSON cargado correctamente');
+        questions = data;
+    })
+    .catch(error => {
+        console.error('Error al cargar el archivo JSON:', error);
+    });
+
+    function generateQuestions(questions) {
+        const container = document.querySelector('.sugested-questions');
+        container.innerHTML = ''; // Limpiar cualquier contenido previo
+
+        // Seleccionar 4 preguntas al azar
+        const randomQuestions = [];
+        while (randomQuestions.length < 1) {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            if (!randomQuestions.includes(questions[randomIndex])) {
+                randomQuestions.push(questions[randomIndex]);
+            }
+        }
+
+        // Crear un div para cada pregunta
+        randomQuestions.forEach(questionObj => {
+            const questionText = Object.keys(questionObj)[0];
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question');
+            questionDiv.textContent = questionText;
+            container.appendChild(questionDiv);
+        });
+    }
+
+    document.getElementById('generate-btn').addEventListener('click', function() {
+        generateQuestions(questionsJson);
+    });
+
+    // Llamar a la función para generar las preguntas
+    generateQuestions(questionsJson);
     
     async function sendMessageToModel(message) {
         try {
