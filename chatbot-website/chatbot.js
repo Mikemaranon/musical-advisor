@@ -24,10 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function addMessageToChat(sender, message) {
+    function addMessageToChat(sender, message, isHTML = false) {
         const messageElement = document.createElement('div');
         messageElement.classList.add('chat-message', sender);
-        messageElement.textContent = message;
+        if (isHTML) {
+            messageElement.innerHTML = message;
+        } else {
+            messageElement.textContent = message;
+        }
         chatBox.appendChild(messageElement);
         chatBox.scrollTop = chatBox.scrollHeight;
     }
@@ -65,6 +69,34 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error al cargar el archivo de configuración:', error);
         });
     
+    function formatBotResponse(botResponse) {
+        // Dividir el texto en dos partes: antes y después de ":"
+        const [paragraph, ...listItemsArray] = botResponse.split(/:(.+)/);
+        const listItems = listItemsArray.join(':');
+        
+        // Crear el párrafo
+        let formattedResponse = `<p>${paragraph.trim()}</p>`;
+        
+        // Crear la lista desordenada
+        if (listItems) {
+            const items = listItems.split(';;');
+            formattedResponse += '<ul>';
+            items.forEach(item => {
+                // Extraer el texto y el enlace del item
+                const match = item.match(/\[(.*?)\]\((.*?)\)/);
+                if (match) {
+                    const text = match[1];
+                    const url = match[2];
+                    formattedResponse += `<li><a href="${url}" target="_blank">${text}</a>${item.replace(match[0], '').trim()}</li>`;
+                } else {
+                    formattedResponse += `<li>${item.trim()}</li>`;
+                }
+            });
+            formattedResponse += '</ul>';
+        }
+        return formattedResponse;
+    }
+
     async function sendMessageToModel(message) {
     
        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ask-hifi&api-version=2021-10-01&deploymentName=production";
@@ -106,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 const botResponse = data.answers?.[0]?.answer || "No tengo una respuesta para eso.";
                 addMessageToChat('bot', botResponse);
+                const formattedResponse = formatBotResponse(botResponse);
+                addMessageToChat('bot', formattedResponse, true);
             } else {
                 console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
                 addMessageToChat('bot', `Error en la respuesta de Azure: ${data?.error?.message}`);
