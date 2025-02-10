@@ -10,3 +10,5 @@ Posteriormente lanzamos el proyecto para que sea accesible a través de la red
 ## 4: Chatbot en la web
 Accediendo a `chatbot-website/chatbot.html` tendremos ya listo todo lo necesario para poder empezar a usar el bot. Introduce en `keys.json` la clave API y el endpoint de tu proyecto.  
 En el caso de que no los reconozca bien, puedes introducirlos manualmente dentro del código JS en la función `sendMessageToModel` en las variables `endpoint` y `subscriptionKey`
+
+![image](https://github.com/user-attachments/assets/afaafd8d-23ec-406b-8e7b-ea586e5947a9)
