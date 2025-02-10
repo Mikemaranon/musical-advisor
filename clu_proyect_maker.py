@@ -7,6 +7,11 @@ with open('hifi-data/ibanez.json', 'r', encoding='utf-8') as file:
 with open('azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
     clu_template = json.load(file)
 
+with open("azure-clu/keywords.txt") as f:
+    keywords = [line.strip().lower() for line in f]
+
+executed_mostrar_lista_de_productos = False
+
 intents_data = [
     {
         "intent": "saber_precio",
@@ -27,10 +32,10 @@ intents_data = [
                     "precio": [
                         "precio", "costo", "valor", "tarifa", "valoración", "cuesta",
                         "coste", "importe", "cotización", "tasación", "valoracion",
-                        "precio de venta", "precio de compra", "precio de mercado",
-                        "precio de oferta", "precio de catálogo", "precio de referencia",
+                        "precio de venta", "precio de mercado", "precio de venta al público"
+                        "precio de catálogo", "precio de referencia", "precio de tarifa"
                         "precio de lista", "precio de liquidación", "precio de salida",
-                        "precio de saldo", "precio de tarifa", "precio de venta al público"
+                        "precio de saldo"
                     ],
                     "rebaja": [
                         "rebaja", "descuento", "oferta", "promoción", "descuento especial",
@@ -114,11 +119,36 @@ intents_data = [
                         "características", "especificaciones", "detalles", "atributos",
                         "propiedades", "funciones", "característica", "especificación",
                         "detalle", "atributo", "propiedad", "función", "caracteristica",
-                        "especificacion", "atributos", "propiedades", "funciones", "madera",
-                        "caoba", "arce", "Color Negro", "Acabado Natural", "Cuerpo de Acacia", 
-                        "Acacia", "24 trastes", "golpeador", "aliso", "ocume", "Escala de 648", 
-                        "2 pastillas", "Incluye estuche", "Cejilla de hueso", "Signature"
+                        "especificacion", "atributos", "propiedades", "funciones", "madera"
                     ],
+                }
+            }
+        ]
+    },
+    {
+        "intent": "mostrar_lista_de_productos",
+        "examples": [
+            
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": {
+                    # leer cada product["type"] y hacer una lista de todos
+                    # los product["title"] que coincidan en el tipo
+                }
+            },
+            {
+                "type": "lista",
+                "values": {
+                    "lista": [
+                        "muéstrame los productos", "dime qué productos", "qué productos tienes",
+                        "enséñame los productos", "quiero ver los productos", "lista de productos",
+                        "productos disponibles", "qué productos hay", "qué productos están disponibles",
+                        "quiero ver la lista de productos", "puedes mostrarme los productos",
+                        "puedes decirme qué productos tienes", "qué productos puedes ofrecerme",
+                        "qué productos están en stock", "qué productos están en existencia"
+                    ]
                 }
             }
         ]
@@ -138,6 +168,8 @@ def generate_synonyms(product):
         
 
 def generate_intent_examples(product):
+    global executed_mostrar_lista_de_productos
+    
     for t in product["type"]:
         for i in intents_data:
             if i["intent"] == "saber_precio":
@@ -156,9 +188,55 @@ def generate_intent_examples(product):
                                 "length": 6
                             }
                         ]
+                    },
+                    {
+                        "text": "¿Cuál es el precio del " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 23,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 12,
+                                "length": 6
+                            }
+                        ]
+                    },
+                    {
+                        "text": "¿cuales son los " + product["type"] + " mas caros?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 16,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 21 + len(product['title']),
+                                "length": 5
+                            }
+                        ]
+                    },
+                    {
+                        "text": "¿cuales son los " + product["type"] + " mas baratos?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 16,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 21 + len(product['title']),
+                                "length": 5
+                            }
+                        ]
                     }
                 ]
                 i["examples"].append(input[0])
+                
             elif i["intent"] == "saber_disponibilidad":
                 input = [
                     {
@@ -175,9 +253,25 @@ def generate_intent_examples(product):
                                 "length": 10
                             }
                         ]
+                    },
+                    {
+                        "text": "¿En que fecha puedo tener el " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 29,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "disponibilidad",
+                                "offset": 8,
+                                "length": 5
+                            }
+                        ]
                     }
                 ]
                 i["examples"].append(input[0])
+                
             elif i["intent"] == "saber_redireccion":
                 input = [
                     {
@@ -195,9 +289,26 @@ def generate_intent_examples(product):
                             }
                         ]
                         
+                    },
+                    {
+                        "text": "¿donde puedo comprar el producto " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 33,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "enlace",
+                                "offset": 13,
+                                "length": 7
+                            }
+                        ]
                     }
                 ]
                 i["examples"].append(input[0])
+                i["examples"].append(input[1])
+                
             elif i["intent"] == "saber_caracteristicas":
                 input = [
                     {
@@ -214,10 +325,71 @@ def generate_intent_examples(product):
                                 "length": 15
                             }
                         ]
-                        
+                    },
+                    {
+                        "text": "¿cuales son las caracteristicas del " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 36,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "caracteristicas",
+                                "offset": 16,
+                                "length": 15
+                            }
+                        ]
                     }
                 ]
+                
+                wood_input = [
+                    {
+                        "text": "¿que tipo de madera tiene el " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 29,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "caracteristicas",
+                                "offset": 13,
+                                "length": 6
+                            }
+                        ]
+                    }
+                ]
+                
                 i["examples"].append(input[0])
+                i["examples"].append(input[1])
+                if(product["type"] == "guitarra" or product["type"] == "bajo" or product["type"] == "ukelele"):
+                    i["examples"].append(wood_input[0])
+                
+            elif i["intent"] == "mostrar_lista_de_productos":
+                if not executed_mostrar_lista_de_productos:
+                    for kw in keywords:
+                        input = [
+                            {
+                                "text": "¿Que productos tienen " + kw,
+                                "entities": [
+                                    {
+                                        "category": "producto",
+                                        "offset": 5,
+                                        "length": 9
+                                    },
+                                    {
+                                        "category": "lista",
+                                        "offset": 22,
+                                        "length": len(kw)
+                                    }
+                                ]
+                            }
+                        ]
+                        i["examples"].append(input[0])
+                    executed_mostrar_lista_de_productos = True
+                else:
+                    print("Intent ya ejecutado.")
             else:
                 print("Intent no encontrado.")
                 break

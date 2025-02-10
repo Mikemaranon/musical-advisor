@@ -76,6 +76,14 @@ def analyze_prices(data):
 
     return questions
 
+def generate_price_questions(data):
+    # Generar preguntas sobre los precios de los productos
+    for item in data:
+        if 'current_price' in item:
+            question = f"¿Cuánto cuesta el producto {item['title']}?"
+            answer = f"El producto {item['title']} cuesta {item['current_price']}"
+            global_questions.append({question: answer})
+
 def generate_characteristics_questions(data):
     # Generar preguntas sobre las características de los productos
     for item in data:
@@ -134,6 +142,7 @@ def generate_text_file_from_questions(questions, filename="azure-qna/azure-quest
 generate_keyword_questions(products)            # genera preguntas de palabras clave
 generate_discount_questions(products)           # genera preguntas de descuentos por tipo de producto
 analyze_prices(products)                        # genera preguntas de precios por tipo de producto
+generate_price_questions(products)              # genera preguntas de precios de los productos
 generate_characteristics_questions(products)    # genera preguntas de características de los productos
 generate_delivery_date_questions(products)      # genera preguntas de fechas de entrega
 generate_purchase_link_questions(products)      # genera preguntas de enlaces de compra

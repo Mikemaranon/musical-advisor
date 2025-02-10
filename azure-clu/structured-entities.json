@@ -603,17 +603,13 @@
                         "tasación",
                         "valoracion",
                         "precio de venta",
-                        "precio de compra",
                         "precio de mercado",
-                        "precio de oferta",
-                        "precio de catálogo",
+                        "precio de venta al públicoprecio de catálogo",
                         "precio de referencia",
-                        "precio de lista",
+                        "precio de tarifaprecio de lista",
                         "precio de liquidación",
                         "precio de salida",
-                        "precio de saldo",
-                        "precio de tarifa",
-                        "precio de venta al público"
+                        "precio de saldo"
                     ],
                     "rebaja": [
                         "rebaja",
@@ -1275,6 +1271,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AZ2407F-BSR Guitarra Electrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez TR Mini Pedal Efectos",
                 "entities": [
                     {
@@ -1286,6 +1297,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez TR Mini Pedal Efectos?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 28
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1305,6 +1331,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez DC501L Cable Distribución Corriente?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 42
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez TCY10E BK Guitarra Electro Acústica",
                 "entities": [
                     {
@@ -1316,6 +1357,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez TCY10E BK Guitarra Electro Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 42
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1335,6 +1391,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AW70ECE Nt Guitarra Acústica Electrificada ( REACONDICIONADO )?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 69
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez EWP12EWB-OPN Guitarra Picolo",
                 "entities": [
                     {
@@ -1346,6 +1417,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez EWP12EWB-OPN Guitarra Picolo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 35
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1365,6 +1451,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez RG421QM-CBB Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez GRG170 DX BKN Guitarra Eléctrica",
                 "entities": [
                     {
@@ -1376,6 +1477,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez GRG170 DX BKN Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 39
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1395,6 +1511,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AS53 TF Guitarra Eléctrica Tobacco Flat?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 46
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez PF15 BK Guitarra Acústica",
                 "entities": [
                     {
@@ -1406,6 +1537,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez PF15 BK Guitarra Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 32
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1425,6 +1571,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez GSR200 BK Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 31
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat",
                 "entities": [
                     {
@@ -1436,6 +1597,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 45
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1455,6 +1631,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez GSR180 BK Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 31
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez PF15ECE TBS Guitarra Electro Acústica",
                 "entities": [
                     {
@@ -1466,6 +1657,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez PF15ECE TBS Guitarra Electro Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 44
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1485,6 +1691,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez GRG121DX BKF Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 38
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez TMB100 MGR Bajo Eléctrico",
                 "entities": [
                     {
@@ -1496,6 +1717,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez TMB100 MGR Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 32
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1515,6 +1751,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AW54 CE OPN Guitarra Acústica Electrificada?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 50
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez TMB30 BK Bajo Eléctrico Talman",
                 "entities": [
                     {
@@ -1526,6 +1777,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez TMB30 BK Bajo Eléctrico Talman?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1545,6 +1811,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez CSMINI Chorus. Pedal de Efectos?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 38
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez JEM77P BFP Signature Steve Vai",
                 "entities": [
                     {
@@ -1556,6 +1837,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez JEM77P BFP Signature Steve Vai?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1575,6 +1871,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez M300C Estuche para guitarra RG/RGA/RGD/RG7/S/SA?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 54
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro",
                 "entities": [
                     {
@@ -1586,6 +1897,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 54
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1605,6 +1931,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez JEMJRSP-PK Signature Steve Vai?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez IMC50FS Taburete Guitarrista con soporte guitarra",
                 "entities": [
                     {
@@ -1616,6 +1957,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez IMC50FS Taburete Guitarrista con soporte guitarra?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 56
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1635,6 +1991,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AF55L-TF Guitarra Eléctrica Zurdo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 40
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez AF55-TKF Guitarra Eléctrica Hollowbody",
                 "entities": [
                     {
@@ -1646,6 +2017,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez AF55-TKF Guitarra Eléctrica Hollowbody?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 45
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1665,6 +2051,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez TMB30-MGR Mint Green Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 42
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )",
                 "entities": [
                     {
@@ -1676,6 +2077,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 69
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1695,6 +2111,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez AEG50N-NT Guitarra de Concierto?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 38
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte",
                 "entities": [
                     {
@@ -1706,6 +2137,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 63
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1725,6 +2171,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez SA360NQM-SPB Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 38
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche",
                 "entities": [
                     {
@@ -1736,6 +2197,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 61
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             },
@@ -1755,6 +2231,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez RG5170G-SVF Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 37
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo",
                 "entities": [
                     {
@@ -1770,6 +2261,21 @@
                 ]
             },
             {
+                "text": "¿donde puedo comprar el producto Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 57
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
+                    }
+                ]
+            },
+            {
                 "text": "dame el enlace de Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst",
                 "entities": [
                     {
@@ -1781,6 +2287,21 @@
                         "category": "enlace",
                         "offset": 8,
                         "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿donde puedo comprar el producto Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 33,
+                        "length": 45
+                    },
+                    {
+                        "category": "enlace",
+                        "offset": 13,
+                        "length": 7
                     }
                 ]
             }
@@ -1883,6 +2404,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AZ2407F-BSR Guitarra Electrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez TR Mini Pedal Efectos",
                 "entities": [
                     {
@@ -1893,6 +2429,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez TR Mini Pedal Efectos?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 28
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -1913,6 +2464,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez DC501L Cable Distribución Corriente?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 42
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez TCY10E BK Guitarra Electro Acústica",
                 "entities": [
                     {
@@ -1923,6 +2489,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez TCY10E BK Guitarra Electro Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 42
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -1943,6 +2524,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AW70ECE Nt Guitarra Acústica Electrificada ( REACONDICIONADO )?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 69
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez EWP12EWB-OPN Guitarra Picolo",
                 "entities": [
                     {
@@ -1953,6 +2549,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez EWP12EWB-OPN Guitarra Picolo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 35
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -1973,6 +2584,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez RG421QM-CBB Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez GRG170 DX BKN Guitarra Eléctrica",
                 "entities": [
                     {
@@ -1983,6 +2609,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez GRG170 DX BKN Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 39
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2003,6 +2644,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AS53 TF Guitarra Eléctrica Tobacco Flat?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 46
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez PF15 BK Guitarra Acústica",
                 "entities": [
                     {
@@ -2013,6 +2669,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez PF15 BK Guitarra Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 32
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2033,6 +2704,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez GSR200 BK Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 31
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat",
                 "entities": [
                     {
@@ -2043,6 +2729,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 45
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2063,6 +2764,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez GSR180 BK Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 31
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez PF15ECE TBS Guitarra Electro Acústica",
                 "entities": [
                     {
@@ -2073,6 +2789,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez PF15ECE TBS Guitarra Electro Acústica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 44
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2093,6 +2824,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez GRG121DX BKF Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 38
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez TMB100 MGR Bajo Eléctrico",
                 "entities": [
                     {
@@ -2103,6 +2849,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez TMB100 MGR Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 32
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2123,6 +2884,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AW54 CE OPN Guitarra Acústica Electrificada?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 50
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez TMB30 BK Bajo Eléctrico Talman",
                 "entities": [
                     {
@@ -2133,6 +2909,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez TMB30 BK Bajo Eléctrico Talman?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2153,6 +2944,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez CSMINI Chorus. Pedal de Efectos?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 38
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez JEM77P BFP Signature Steve Vai",
                 "entities": [
                     {
@@ -2163,6 +2969,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez JEM77P BFP Signature Steve Vai?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2183,6 +3004,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez M300C Estuche para guitarra RG/RGA/RGD/RG7/S/SA?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 54
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro",
                 "entities": [
                     {
@@ -2193,6 +3029,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 54
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2213,6 +3064,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez JEMJRSP-PK Signature Steve Vai?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez IMC50FS Taburete Guitarrista con soporte guitarra",
                 "entities": [
                     {
@@ -2223,6 +3089,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez IMC50FS Taburete Guitarrista con soporte guitarra?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 56
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2243,6 +3124,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AF55L-TF Guitarra Eléctrica Zurdo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 40
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez AF55-TKF Guitarra Eléctrica Hollowbody",
                 "entities": [
                     {
@@ -2253,6 +3149,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez AF55-TKF Guitarra Eléctrica Hollowbody?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 45
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2273,6 +3184,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez TMB30-MGR Mint Green Bajo Eléctrico?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 42
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )",
                 "entities": [
                     {
@@ -2283,6 +3209,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 69
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2303,6 +3244,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez AEG50N-NT Guitarra de Concierto?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 38
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte",
                 "entities": [
                     {
@@ -2313,6 +3269,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 63
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2333,6 +3304,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez SA360NQM-SPB Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 38
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche",
                 "entities": [
                     {
@@ -2343,6 +3329,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 61
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2363,6 +3364,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez RG5170G-SVF Guitarra Eléctrica?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 37
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo",
                 "entities": [
                     {
@@ -2378,6 +3394,21 @@
                 ]
             },
             {
+                "text": "¿cuales son las caracteristicas del Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 57
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
+                        "length": 15
+                    }
+                ]
+            },
+            {
                 "text": "dame las caracteristicas de Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst",
                 "entities": [
                     {
@@ -2388,6 +3419,21 @@
                     {
                         "category": "caracteristicas",
                         "offset": 9,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿cuales son las caracteristicas del Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst?",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 36,
+                        "length": 45
+                    },
+                    {
+                        "category": "caracteristicas",
+                        "offset": 16,
                         "length": 15
                     }
                 ]
@@ -2473,22 +3519,319 @@
                         "atributos",
                         "propiedades",
                         "funciones",
-                        "madera",
-                        "caoba",
-                        "arce",
-                        "Color Negro",
-                        "Acabado Natural",
-                        "Cuerpo de Acacia",
-                        "Acacia",
-                        "24 trastes",
-                        "golpeador",
-                        "aliso",
-                        "ocume",
-                        "Escala de 648",
-                        "2 pastillas",
-                        "Incluye estuche",
-                        "Cejilla de hueso",
-                        "Signature"
+                        "madera"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "intent": "mostrar_lista_de_productos",
+        "examples": [
+            {
+                "text": "¿Que productos tienen caoba",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 5
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen arce",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 4
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen color negro",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 11
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen acabado natural",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen cuerpo de acacia",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 16
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen acacia",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 6
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen 24 trastes",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 10
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen golpeador",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 9
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen aliso",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 5
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen ocume",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 5
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen escala de 648",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 13
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen 2 pastillas",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 11
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen incluye estuche",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 15
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen cejilla de hueso",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 16
+                    }
+                ]
+            },
+            {
+                "text": "¿Que productos tienen signature",
+                "entities": [
+                    {
+                        "category": "producto",
+                        "offset": 5,
+                        "length": 9
+                    },
+                    {
+                        "category": "lista",
+                        "offset": 22,
+                        "length": 9
+                    }
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": {
+                    "guitarra": [
+                        "guitarra",
+                        "Ibanez AZ2407F-BSR Guitarra Electrica",
+                        "Ibanez TCY10E BK Guitarra Electro Acústica",
+                        "Ibanez AW70ECE Nt Guitarra Acústica Electrificada ( REACONDICIONADO )",
+                        "Ibanez EWP12EWB-OPN Guitarra Picolo",
+                        "Ibanez RG421QM-CBB Guitarra Eléctrica",
+                        "Ibanez GRG170 DX BKN Guitarra Eléctrica",
+                        "Ibanez AS53 TF Guitarra Eléctrica Tobacco Flat",
+                        "Ibanez PF15 BK Guitarra Acústica",
+                        "Ibanez PF15ECE TBS Guitarra Electro Acústica",
+                        "Ibanez GRG121DX BKF Guitarra Eléctrica",
+                        "Ibanez AW54 CE OPN Guitarra Acústica Electrificada",
+                        "Ibanez M300C Estuche para guitarra RG/RGA/RGD/RG7/S/SA",
+                        "Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro",
+                        "Ibanez IMC50FS Taburete Guitarrista con soporte guitarra",
+                        "Ibanez AF55L-TF Guitarra Eléctrica Zurdo",
+                        "Ibanez AF55-TKF Guitarra Eléctrica Hollowbody",
+                        "Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )",
+                        "Ibanez AEG50N-NT Guitarra de Concierto",
+                        "Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte",
+                        "Ibanez SA360NQM-SPB Guitarra Eléctrica",
+                        "Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche",
+                        "Ibanez RG5170G-SVF Guitarra Eléctrica",
+                        "Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst"
+                    ],
+                    "pedal": [
+                        "pedal",
+                        "Ibanez TR Mini Pedal Efectos",
+                        "Ibanez CSMINI Chorus. Pedal de Efectos"
+                    ],
+                    "cable": [
+                        "cable",
+                        "Ibanez DC501L Cable Distribución Corriente"
+                    ],
+                    "bajo": [
+                        "bajo",
+                        "Ibanez GSR200 BK Bajo Eléctrico",
+                        "Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat",
+                        "Ibanez GSR180 BK Bajo Eléctrico",
+                        "Ibanez TMB100 MGR Bajo Eléctrico",
+                        "Ibanez TMB30 BK Bajo Eléctrico Talman",
+                        "Ibanez TMB30-MGR Mint Green Bajo Eléctrico"
+                    ],
+                    "signature": [
+                        "signature",
+                        "Ibanez JEM77P BFP Signature Steve Vai",
+                        "Ibanez JEMJRSP-PK Signature Steve Vai"
+                    ],
+                    "correa": [
+                        "correa",
+                        "Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo"
+                    ]
+                }
+            },
+            {
+                "type": "lista",
+                "values": {
+                    "lista": [
+                        "muéstrame los productos",
+                        "dime qué productos",
+                        "qué productos tienes",
+                        "enséñame los productos",
+                        "quiero ver los productos",
+                        "lista de productos",
+                        "productos disponibles",
+                        "qué productos hay",
+                        "qué productos están disponibles",
+                        "quiero ver la lista de productos",
+                        "puedes mostrarme los productos",
+                        "puedes decirme qué productos tienes",
+                        "qué productos puedes ofrecerme",
+                        "qué productos están en stock",
+                        "qué productos están en existencia"
                     ]
                 }
             }

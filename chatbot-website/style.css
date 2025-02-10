@@ -29,7 +29,7 @@ body {
 }
 
 .chat-box {
-    height: 400px;
+    height: 500px;
     overflow-y: scroll;
     padding: 10px;
     border-radius: 10px;
@@ -100,7 +100,16 @@ body {
 }
 
 .chat-message.bot {
-    margin-right: auto;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.chat-message.analysis {
+    margin-left: 10px;
+    color: grey;
+    background-color:  #2c2c2c;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .chat-message a {
@@ -111,4 +120,8 @@ body {
 
 .chat-message a:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+}
+
+p {
+    margin: 0;
 }

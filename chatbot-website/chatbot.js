@@ -105,15 +105,69 @@ document.addEventListener('DOMContentLoaded', function() {
         return formattedResponse;
     }
 
-    async function getIntent(message) {
-        
+    async function analyzeConversation(query, participantId = "user", language = "es") {
+        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview";
+        const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
+    
+        const requestBody = {
+            kind: "Conversation",
+            analysisInput: {
+                conversationItem: {
+                    id: participantId,
+                    text: query,
+                    modality: "text",
+                    language: language,
+                    participantId: participantId
+                }
+            },
+            parameters: {
+                projectName: "musical-advisor",
+                verbose: true,
+                deploymentName: "ask-hifi-L2",
+                stringIndexType: "TextElement_V8"
+            }
+        };
+    
+        console.log("Enviando petición a Azure con:", JSON.stringify(requestBody, null, 2));
+    
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Ocp-Apim-Subscription-Key": subscriptionKey,
+                    "Content-Type": "application/json",
+                    "Apim-Request-Id": "4ffcac1c-b2fc-48ba-bd6d-b69d9942995a"
+                },
+                body: JSON.stringify(requestBody)
+            });
+    
+            const data = await response.json();
+            console.log("Respuesta recibida de Azure:", data);
+    
+            if (response.ok) {
+                const botResponse = data.result?.prediction?.topIntent || "No se pudo determinar la intención.";
+                addMessageToChat('analysis', formatAnalysisResponse(botResponse), true);
+            } else {
+                console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
+                addMessageToChat('analysis', `Error en la respuesta de Azure: ${data?.error?.message}`);
+            }
+        } catch (error) {
+            console.error("Error al conectar con Azure:", error);
+            addMessageToChat('analysis', "Error al obtener la respuesta.");
+        }
+    }
+
+    function formatAnalysisResponse(botResponse) {
+        botResponse = botResponse.replace(/_/g, ' ');
+        let response = "intención: " + botResponse;
+        return response;
     }
 
     async function sendMessageToModel(message) {
     
-       const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ask-hifi&api-version=2021-10-01&deploymentName=production";
-       const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
-   
+        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ask-hifi&api-version=2021-10-01&deploymentName=production";
+        const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
+
         const requestBody = {
             "top": 3,
             "question": message,
@@ -135,6 +189,9 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Enviando petición a Azure con:", JSON.stringify(requestBody, null, 2));
 
         try {
+            // Call analyzeConversation and get the output
+            const analysisOutput = await analyzeConversation(message);
+
             const response = await fetch(endpoint, {
                 method: "POST",
                 headers: {
