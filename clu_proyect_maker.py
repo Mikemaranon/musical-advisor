@@ -51,10 +51,10 @@ intents_data = [
         "entities": [
             {
                 "type": "producto",
-                "values": [
+                "values": {
                     # leer cada product["type"] y hacer una lista de todos
                     # los product["title"] que coincidan en el tipo
-                ]
+                }
             },
             {
                 "type": "disponibilidad",
@@ -78,10 +78,10 @@ intents_data = [
         "entities": [
             {
                 "type": "producto",
-                "values": [
+                "values": {
                     # leer cada product["type"] y hacer una lista de todos
                     # los product["title"] que coincidan en el tipo
-                ]
+                }
             },
             {
                 "type": "enlace",
@@ -126,14 +126,15 @@ intents_data = [
 ]
 
 def generate_synonyms(product):
-    product_type = product["type"][0]
-    for i in intents_data:
-        if product_type not in i["entities"][0]["values"]:
-            i["entities"][0]["values"].append(product_type)
-            i["entities"][0]["values"][product["title"]].append(product["type"])
-            i["entities"][0]["values"][product["title"]].append(product["title"])
-        else:
-            i["entities"][0]["values"][product["title"]].append(product["title"])
+    if product["type"]:
+        product_type = product["type"][0]
+        for i in intents_data:
+            if product_type not in i["entities"][0]["values"]:
+                i["entities"][0]["values"][product_type] = []
+                i["entities"][0]["values"][product_type].append(product_type)
+                i["entities"][0]["values"][product_type].append(product["title"])
+            else:
+                i["entities"][0]["values"][product_type].append(product["title"])
         
 
 def generate_intent_examples(product):
@@ -142,80 +143,78 @@ def generate_intent_examples(product):
             if i["intent"] == "saber_precio":
                 input = [
                     {
-                        "¿Cuánto cuesta el " + {product['title']}+ "?": {
-                            "entities": [
-                                {
-                                    "category": "producto",
-                                    "offset": 18,
-                                    "length": {len(product['title'])}
-                                },
-                                {
-                                    "category": "precio",
-                                    "offset": 8,
-                                    "length": 6
-                                }
-                            ]
-                        }
+                        "text": "¿Cuánto cuesta el " + product['title'] + "?",
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 18,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 8,
+                                "length": 6
+                            }
+                        ]
                     }
                 ]
                 i["examples"].append(input[0])
             elif i["intent"] == "saber_disponibilidad":
                 input = [
                     {
-                        "¿Cuándo estaría disponible el " + product['title']+ "?": {
-                            "entities": [
-                                {
-                                    "category": "producto",
-                                    "offset": 31,
-                                    "length": len(product['title'])
-                                },
-                                {
-                                    "category": "disponibilidad",
-                                    "offset": 18,
-                                    "length": 10
-                                }
-                            ]
-                        }
+                        "text": "¿Cuándo estaría disponible el " + product['title']+ "?",                         
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 31,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "disponibilidad",
+                                "offset": 18,
+                                "length": 10
+                            }
+                        ]
                     }
                 ]
                 i["examples"].append(input[0])
             elif i["intent"] == "saber_redireccion":
                 input = [
                     {
-                        "dame el enlace de " + product['title']: {
-                            "entities": [
-                                {
-                                    "category": "producto",
-                                    "offset": 18,
-                                    "length": len(product['title'])
-                                },
-                                {
-                                    "category": "enlace",
-                                    "offset": 10,
-                                    "length": 6
-                                }
-                            ]
-                        }
+                        "text": "dame el enlace de " + product['title'],
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 18,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "enlace",
+                                "offset": 10,
+                                "length": 6
+                            }
+                        ]
+                        
                     }
                 ]
                 i["examples"].append(input[0])
             elif i["intent"] == "saber_caracteristicas":
                 input = [
                     {
-                        "dame las caracteristicas de " + product['title']: {
-                            "entities": [
-                                {
-                                    "category": "producto",
-                                    "offset": 31,
-                                    "length": len(product['title'])
-                                },
-                                {
-                                    "category": "precio",
-                                    "offset": 10,
-                                    "length": 14
-                                }
-                            ]
-                        }
+                        "text": "dame las caracteristicas de " + product['title'],
+                        "entities": [
+                            {
+                                "category": "producto",
+                                "offset": 31,
+                                "length": len(product['title'])
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 10,
+                                "length": 14
+                            }
+                        ]
+                        
                     }
                 ]
                 i["examples"].append(input[0])
@@ -224,79 +223,61 @@ def generate_intent_examples(product):
                 break
         
 
-#def create_conversational_file(intents_data):
-#
-#    # Agregar intents
-#    for intent in intents_data:
-#        clu_template["assets"]["intents"].append({"category": intent["intent"]})
-#
-#        # Agregar entidades correctamente
-#        for entity in intent["entities"]:
-#            entity_category = entity["type"]
-#            existing_entity = next((e for e in clu_template["assets"]["entities"] if e["category"] == entity_category), None)
-#
-#            if not existing_entity:
-#                # Crear una nueva entidad si no existe
-#                new_entity = {
-#                    "category": entity_category,
-#                    "compositionSetting": "separateComponents",
-#                    "list": {"sublists": []}
-#                }
-#                clu_template["assets"]["entities"].append(new_entity)
-#                existing_entity = new_entity
-#
-#            # Agregar cada modelo como un sublist separado
-#            for value in entity["values"]:
-#                existing_sublist = next((s for s in existing_entity["list"]["sublists"] if s["listKey"] == value), None)
-#
-#                if not existing_sublist:
-#                    existing_entity["list"]["sublists"].append({
-#                        "listKey": value,
-#                        "synonyms": [
-#                            {
-#                                "language": "es",
-#                                "values": [value]
-#                            }
-#                        ]
-#                    })
-#
-#        # Agregar ejemplos de entrenamiento (utterances)
-#        for example in intent["examples"]:
-#            # Determinar la posición de la entidad en el texto
-#            entity_positions = []
-#            for entity in intent["entities"]:
-#                for value in entity["values"]:
-#                    start_index = example.lower().find(value.lower())
-#                    if start_index != -1:
-#                        entity_positions.append({
-#                            "category": entity["type"],
-#                            "offset": start_index,
-#                            "length": len(value)
-#                        })
-#
-#            clu_template["assets"]["utterances"].append({
-#                "text": example,
-#                "intent": intent["intent"],
-#                "language": "es",
-#                "dataset": "train",
-#                "entities": entity_positions
-#            })
-#
-#    return clu_template
+def create_conversational_file(intents_data):
+
+    # Agregar intents
+    for intent in intents_data:
+        clu_template["assets"]["intents"].append({"category": intent["intent"]})
+
+        for entity in intent["entities"]:
+            entity_category = entity["type"]
+            sublist = []
+            for value in entity["values"]:
+                for element in value:
+                    sublist.append({
+                        "listKey": value,
+                        "synonyms": [
+                            {
+                                "language": "es",
+                                "values": [element]
+                            }
+                        ]
+                    })
+            clu_template["assets"]["entities"].append({
+                "category": entity_category,
+                "compositionSetting": "separateComponents",
+                "list": {"sublists": sublist}
+            })
+        
+        for example in intent["examples"]:
+            clu_template["assets"]["utterances"].append({
+                "text": example["text"],
+                "intent": intent["intent"],
+                "language": "es",
+                "dataset": "train",
+                "entities": example["entities"]
+            })
+
+    return clu_template
 
 # Generar intents
 for product in products:
     generate_synonyms(product)
+    generate_intent_examples(product)
 
 # Guardar archivo JSON de intents
-with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
-    json.dump(intents_data, f, ensure_ascii=False, indent=4)
+try: 
+    with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
+        json.dump(intents_data, f, ensure_ascii=False, indent=4)
+        
+except Exception as e:
+    print("Error al guardar archivo JSON de intents:", e)
     
 # Crear JSON de CLU solo una vez después del bucle
-# clu_project = create_conversational_file(intents_data)
+clu_project = create_conversational_file(intents_data)
 
 # Guardar archivo CLU
-# with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
-#     json.dump(clu_project, f, ensure_ascii=False, indent=4)
+with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
+    json.dump(clu_project, f, ensure_ascii=False, indent=4)
 
 print("Archivos generados correctamente.")

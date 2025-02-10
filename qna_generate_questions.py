@@ -76,6 +76,14 @@ def analyze_prices(data):
 
     return questions
 
+def generate_characteristics_questions(data):
+    # Generar preguntas sobre las características de los productos
+    for item in data:
+        if 'features' in item:
+            question = f"¿Qué características tiene el producto {item['title']}?"
+            answer = f"El producto {item['title']} tiene las siguientes características:: {';; '.join(item['features'])}"
+            global_questions.append({question: answer})
+
 def generate_delivery_date_questions(data):
     # Generar preguntas sobre la fecha de entrega para cada producto
     for item in data:
@@ -123,12 +131,13 @@ def generate_text_file_from_questions(questions, filename="azure-qna/azure-quest
                 question_number += 1
     print(f"Se ha creado el archivo {filename} con el formato adecuado.")
 
-generate_keyword_questions(products)        # genera preguntas de palabras clave
-generate_discount_questions(products)       # genera preguntas de descuentos por tipo de producto
-analyze_prices(products)                    # genera preguntas de precios por tipo de producto
-generate_delivery_date_questions(products)  # genera preguntas de fechas de entrega
-generate_purchase_link_questions(products)  # genera preguntas de enlaces de compra
-generate_wood_type_questions(products)      # genera preguntas de tipos de madera
+generate_keyword_questions(products)            # genera preguntas de palabras clave
+generate_discount_questions(products)           # genera preguntas de descuentos por tipo de producto
+analyze_prices(products)                        # genera preguntas de precios por tipo de producto
+generate_characteristics_questions(products)    # genera preguntas de características de los productos
+generate_delivery_date_questions(products)      # genera preguntas de fechas de entrega
+generate_purchase_link_questions(products)      # genera preguntas de enlaces de compra
+generate_wood_type_questions(products)          # genera preguntas de tipos de madera
 
 generate_text_file_from_questions(global_questions)
 
