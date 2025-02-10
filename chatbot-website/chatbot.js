@@ -105,6 +105,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return formattedResponse;
     }
 
+    async function getIntent(message) {
+        
+    }
+
     async function sendMessageToModel(message) {
     
        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ask-hifi&api-version=2021-10-01&deploymentName=production";

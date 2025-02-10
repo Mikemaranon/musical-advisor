@@ -131,7 +131,7 @@ def generate_synonyms(product):
         for i in intents_data:
             if product_type not in i["entities"][0]["values"]:
                 i["entities"][0]["values"][product_type] = []
-                i["entities"][0]["values"][product_type].append(product_type)
+                i["entities"][0]["values"][product_type].append(product_type )
                 i["entities"][0]["values"][product_type].append(product["title"])
             else:
                 i["entities"][0]["values"][product_type].append(product["title"])
@@ -166,12 +166,12 @@ def generate_intent_examples(product):
                         "entities": [
                             {
                                 "category": "producto",
-                                "offset": 31,
+                                "offset": 30,
                                 "length": len(product['title'])
                             },
                             {
                                 "category": "disponibilidad",
-                                "offset": 18,
+                                "offset": 16,
                                 "length": 10
                             }
                         ]
@@ -190,7 +190,7 @@ def generate_intent_examples(product):
                             },
                             {
                                 "category": "enlace",
-                                "offset": 10,
+                                "offset": 8,
                                 "length": 6
                             }
                         ]
@@ -205,13 +205,13 @@ def generate_intent_examples(product):
                         "entities": [
                             {
                                 "category": "producto",
-                                "offset": 31,
+                                "offset": 28,
                                 "length": len(product['title'])
                             },
                             {
-                                "category": "precio",
-                                "offset": 10,
-                                "length": 14
+                                "category": "caracteristicas",
+                                "offset": 9,
+                                "length": 15
                             }
                         ]
                         
@@ -232,22 +232,27 @@ def create_conversational_file(intents_data):
         for entity in intent["entities"]:
             entity_category = entity["type"]
             sublist = []
-            for value in entity["values"]:
-                for element in value:
-                    sublist.append({
-                        "listKey": value,
-                        "synonyms": [
-                            {
-                                "language": "es",
-                                "values": [element]
-                            }
-                        ]
-                    })
-            clu_template["assets"]["entities"].append({
-                "category": entity_category,
-                "compositionSetting": "separateComponents",
-                "list": {"sublists": sublist}
-            })
+            for key, values in entity["values"].items():
+                elements = []
+                for value in values:
+                    elements.append(value)
+                sublist.append({
+                    "listKey": key,
+                    "synonyms": [
+                        {
+                            "language": "es",
+                            "values": elements
+                        }
+                    ]
+                })
+            
+            # Verificar si la categoría ya existe antes de añadirla
+            if not any(e["category"] == entity_category for e in clu_template["assets"]["entities"]):
+                clu_template["assets"]["entities"].append({
+                    "category": entity_category,
+                    "compositionSetting": "separateComponents",
+                    "list": {"sublists": sublist}
+                })
         
         for example in intent["examples"]:
             clu_template["assets"]["utterances"].append({
@@ -269,7 +274,7 @@ for product in products:
 try: 
     with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
         json.dump(intents_data, f, ensure_ascii=False, indent=4)
-        
+    print("archivo JSON guardado correctamente.")
 except Exception as e:
     print("Error al guardar archivo JSON de intents:", e)
     

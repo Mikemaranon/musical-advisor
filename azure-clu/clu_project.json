@@ -39,84 +39,30 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
+                                        "guitarra",
+                                        "Ibanez AZ2407F-BSR Guitarra Electrica",
+                                        "Ibanez TCY10E BK Guitarra Electro Acústica",
+                                        "Ibanez AW70ECE Nt Guitarra Acústica Electrificada ( REACONDICIONADO )",
+                                        "Ibanez EWP12EWB-OPN Guitarra Picolo",
+                                        "Ibanez RG421QM-CBB Guitarra Eléctrica",
+                                        "Ibanez GRG170 DX BKN Guitarra Eléctrica",
+                                        "Ibanez AS53 TF Guitarra Eléctrica Tobacco Flat",
+                                        "Ibanez PF15 BK Guitarra Acústica",
+                                        "Ibanez PF15ECE TBS Guitarra Electro Acústica",
+                                        "Ibanez GRG121DX BKF Guitarra Eléctrica",
+                                        "Ibanez AW54 CE OPN Guitarra Acústica Electrificada",
+                                        "Ibanez M300C Estuche para guitarra RG/RGA/RGD/RG7/S/SA",
+                                        "Ibanez PGMM31 WH Guitarra Eléctrica Paul Gilbert Mikro",
+                                        "Ibanez IMC50FS Taburete Guitarrista con soporte guitarra",
+                                        "Ibanez AF55L-TF Guitarra Eléctrica Zurdo",
+                                        "Ibanez AF55-TKF Guitarra Eléctrica Hollowbody",
+                                        "Ibanez PF15ECE Bk Guitarra Acústica Electrificada ( REACONDICIONADO )",
+                                        "Ibanez AEG50N-NT Guitarra de Concierto",
+                                        "Ibanez RGD61ALET-MGM Guitarra Eléctrica RGD Metallic Gray Matte",
+                                        "Ibanez SA360NQM-SPB Guitarra Eléctrica",
+                                        "Ibanez AZ2402-PWF Guitarra Eléctrica Prestige Japan + Estuche",
+                                        "Ibanez RG5170G-SVF Guitarra Eléctrica",
+                                        "Ibanez GRX70QA-SB Guitarra Eléctrica Sunburst"
                                     ]
                                 }
                             ]
@@ -127,51 +73,9 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
+                                        "pedal",
+                                        "Ibanez TR Mini Pedal Efectos",
+                                        "Ibanez CSMINI Chorus. Pedal de Efectos"
                                     ]
                                 }
                             ]
@@ -182,51 +86,8 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
+                                        "cable",
+                                        "Ibanez DC501L Cable Distribución Corriente"
                                     ]
                                 }
                             ]
@@ -237,40 +98,13 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "j"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
+                                        "bajo",
+                                        "Ibanez GSR200 BK Bajo Eléctrico",
+                                        "Ibanez GSR200B WNF Bajo Eléctrico Walnut Flat",
+                                        "Ibanez GSR180 BK Bajo Eléctrico",
+                                        "Ibanez TMB100 MGR Bajo Eléctrico",
+                                        "Ibanez TMB30 BK Bajo Eléctrico Talman",
+                                        "Ibanez TMB30-MGR Mint Green Bajo Eléctrico"
                                     ]
                                 }
                             ]
@@ -281,95 +115,9 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
+                                        "signature",
+                                        "Ibanez JEM77P BFP Signature Steve Vai",
+                                        "Ibanez JEMJRSP-PK Signature Steve Vai"
                                     ]
                                 }
                             ]
@@ -380,62 +128,8 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
+                                        "correa",
+                                        "Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo"
                                     ]
                                 }
                             ]
@@ -454,62 +148,29 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "precio",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "precio",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "precio",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "precio",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "precio",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
+                                        "precio",
+                                        "costo",
+                                        "valor",
+                                        "tarifa",
+                                        "valoración",
+                                        "cuesta",
+                                        "coste",
+                                        "importe",
+                                        "cotización",
+                                        "tasación",
+                                        "valoracion",
+                                        "precio de venta",
+                                        "precio de compra",
+                                        "precio de mercado",
+                                        "precio de oferta",
+                                        "precio de catálogo",
+                                        "precio de referencia",
+                                        "precio de lista",
+                                        "precio de liquidación",
+                                        "precio de salida",
+                                        "precio de saldo",
+                                        "precio de tarifa",
+                                        "precio de venta al público"
                                     ]
                                 }
                             ]
@@ -520,477 +181,23 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "rebaja",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "rebaja",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "rebaja",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "rebaja",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "j"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "rebaja",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "category": "producto",
-                "compositionSetting": "separateComponents",
-                "list": {
-                    "sublists": [
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "j"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
+                                        "rebaja",
+                                        "descuento",
+                                        "oferta",
+                                        "promoción",
+                                        "descuento especial",
+                                        "descuento por temporada",
+                                        "descuento por oferta",
+                                        "descuento por salida",
+                                        "descuento por saldo",
+                                        "descuento por liquidación",
+                                        "descuento por lista",
+                                        "descuento por promoción",
+                                        "descuento por venta",
+                                        "descuento por catálogo",
+                                        "descuento por referencia",
+                                        "descuento por tarifa",
+                                        "descuento por precio"
                                     ]
                                 }
                             ]
@@ -1009,565 +216,27 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "disponibilidad",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "category": "producto",
-                "compositionSetting": "separateComponents",
-                "list": {
-                    "sublists": [
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "j"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
+                                        "disponibilidad",
+                                        "existencia",
+                                        "stock",
+                                        "cantidad",
+                                        "unidades",
+                                        "disponible",
+                                        "en stock",
+                                        "en existencia",
+                                        "en inventario",
+                                        "en almacén",
+                                        "en depósito",
+                                        "en bodega",
+                                        "en tienda",
+                                        "en local",
+                                        "en punto de venta",
+                                        "en comercio",
+                                        "en establecimiento",
+                                        "en mercado",
+                                        "en línea",
+                                        "en internet",
+                                        "en la web"
                                     ]
                                 }
                             ]
@@ -1586,477 +255,17 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "enlace",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "enlace",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "enlace",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "enlace",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "enlace",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "category": "producto",
-                "compositionSetting": "separateComponents",
-                "list": {
-                    "sublists": [
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "guitarra",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "p"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "d"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "pedal",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "l"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "cable",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "b"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "j"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "bajo",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "g"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "n"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "u"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "signature",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "o"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "correa",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
+                                        "enlace",
+                                        "link",
+                                        "url",
+                                        "dirección",
+                                        "vínculo",
+                                        "hipervínculo",
+                                        "redirección",
+                                        "hipervinculo",
+                                        "dirección web",
+                                        "dirección url",
+                                        "dirección de internet"
                                     ]
                                 }
                             ]
@@ -2075,161 +284,39 @@
                                 {
                                     "language": "es",
                                     "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "e"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "r"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "t"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "i"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "c"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "a"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "listKey": "caracteristicas",
-                            "synonyms": [
-                                {
-                                    "language": "es",
-                                    "values": [
-                                        "s"
+                                        "características",
+                                        "especificaciones",
+                                        "detalles",
+                                        "atributos",
+                                        "propiedades",
+                                        "funciones",
+                                        "característica",
+                                        "especificación",
+                                        "detalle",
+                                        "atributo",
+                                        "propiedad",
+                                        "función",
+                                        "caracteristica",
+                                        "especificacion",
+                                        "atributos",
+                                        "propiedades",
+                                        "funciones",
+                                        "madera",
+                                        "caoba",
+                                        "arce",
+                                        "Color Negro",
+                                        "Acabado Natural",
+                                        "Cuerpo de Acacia",
+                                        "Acacia",
+                                        "24 trastes",
+                                        "golpeador",
+                                        "aliso",
+                                        "ocume",
+                                        "Escala de 648",
+                                        "2 pastillas",
+                                        "Incluye estuche",
+                                        "Cejilla de hueso",
+                                        "Signature"
                                     ]
                                 }
                             ]
@@ -2877,12 +964,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2895,12 +982,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 28
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2913,12 +1000,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 42
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2931,12 +1018,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 42
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2949,12 +1036,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 69
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2967,12 +1054,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 35
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -2985,12 +1072,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3003,12 +1090,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 39
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3021,12 +1108,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 46
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3039,12 +1126,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 32
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3057,12 +1144,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 31
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3075,12 +1162,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 45
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3093,12 +1180,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 31
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3111,12 +1198,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 44
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3129,12 +1216,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 38
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3147,12 +1234,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 32
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3165,12 +1252,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 50
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3183,12 +1270,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3201,12 +1288,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 38
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3219,12 +1306,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3237,12 +1324,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 54
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3255,12 +1342,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 54
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3273,12 +1360,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3291,12 +1378,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 56
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3309,12 +1396,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 40
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3327,12 +1414,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 45
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3345,12 +1432,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 42
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3363,12 +1450,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 69
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3381,12 +1468,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 38
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3399,12 +1486,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 63
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3417,12 +1504,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 38
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3435,12 +1522,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 61
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3453,12 +1540,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 37
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3471,12 +1558,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 57
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3489,12 +1576,12 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 30,
                         "length": 45
                     },
                     {
                         "category": "disponibilidad",
-                        "offset": 18,
+                        "offset": 16,
                         "length": 10
                     }
                 ]
@@ -3512,7 +1599,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3530,7 +1617,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3548,7 +1635,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3566,7 +1653,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3584,7 +1671,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3602,7 +1689,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3620,7 +1707,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3638,7 +1725,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3656,7 +1743,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3674,7 +1761,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3692,7 +1779,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3710,7 +1797,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3728,7 +1815,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3746,7 +1833,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3764,7 +1851,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3782,7 +1869,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3800,7 +1887,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3818,7 +1905,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3836,7 +1923,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3854,7 +1941,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3872,7 +1959,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3890,7 +1977,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3908,7 +1995,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3926,7 +2013,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3944,7 +2031,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3962,7 +2049,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3980,7 +2067,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -3998,7 +2085,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4016,7 +2103,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4034,7 +2121,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4052,7 +2139,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4070,7 +2157,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4088,7 +2175,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4106,7 +2193,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4124,7 +2211,7 @@
                     },
                     {
                         "category": "enlace",
-                        "offset": 10,
+                        "offset": 8,
                         "length": 6
                     }
                 ]
@@ -4137,13 +2224,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4155,13 +2242,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 28
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4173,13 +2260,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 42
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4191,13 +2278,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 42
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4209,13 +2296,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 69
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4227,13 +2314,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 35
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4245,13 +2332,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4263,13 +2350,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 39
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4281,13 +2368,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 46
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4299,13 +2386,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 32
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4317,13 +2404,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 31
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4335,13 +2422,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 45
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4353,13 +2440,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 31
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4371,13 +2458,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 44
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4389,13 +2476,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 38
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4407,13 +2494,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 32
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4425,13 +2512,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 50
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4443,13 +2530,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4461,13 +2548,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 38
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4479,13 +2566,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4497,13 +2584,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 54
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4515,13 +2602,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 54
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4533,13 +2620,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4551,13 +2638,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 56
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4569,13 +2656,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 40
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4587,13 +2674,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 45
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4605,13 +2692,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 42
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4623,13 +2710,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 69
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4641,13 +2728,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 38
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4659,13 +2746,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 63
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4677,13 +2764,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 38
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4695,13 +2782,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 61
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4713,13 +2800,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 37
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4731,13 +2818,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 57
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             },
@@ -4749,13 +2836,13 @@
                 "entities": [
                     {
                         "category": "producto",
-                        "offset": 31,
+                        "offset": 28,
                         "length": 45
                     },
                     {
-                        "category": "precio",
-                        "offset": 10,
-                        "length": 14
+                        "category": "caracteristicas",
+                        "offset": 9,
+                        "length": 15
                     }
                 ]
             }
