@@ -53,8 +53,9 @@ body {
 }
 
 .chat-input {
-    width: calc(100% - 40%); /* Adjusted to accommodate the send button */
+    width: calc(100% - 39.5%); /* Adjusted to accommodate the send button */
     padding: 10px;
+    height: 17px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
