@@ -17,7 +17,7 @@ def generate_keyword_questions(data):
         filtered_items = [item for item in data if any(keyword in feature.lower() for feature in item["features"])]
         
         question = f"¿Qué instrumentos tienen {keyword}?"
-        answer = "Los instrumentos que tienen {0} son: ".format(keyword) + ";; ".join([f"[{item['title']}]({item['url']})" for item in filtered_items])
+        answer = "Los instrumentos que tienen {0} son:: ".format(keyword) + ";; ".join([f"[{item['title']}]({item['url']})" for item in filtered_items])
         
         global_questions.append({question: answer})
     
@@ -38,7 +38,7 @@ def generate_discount_questions(data):
 
         # Crear la pregunta
         question = f"¿Cuáles son l@s {product_type} más rebajados?"
-        answer = f"L@s {product_type} con mayor descuento son: " + ";; ".join([
+        answer = f"L@s {product_type} con mayor descuento son:: " + ";; ".join([
             f"[{item['title']}]({item['url']}) - {item['price_reduction']}% de descuento - {item['current_price']}€"
             for item in top_products
         ])
@@ -62,14 +62,14 @@ def analyze_prices(data):
 
         # Pregunta de los más caros
         question_expensive = f"¿Cuáles son los {product_type} más caros?"
-        answer_expensive = f"Los {product_type} más caros son: " + ";; ".join(
+        answer_expensive = f"Los {product_type} más caros son:: " + ";; ".join(
             [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_expensive]
         )
         global_questions.append({question_expensive: answer_expensive})
 
         # Pregunta de los más baratos
         question_cheap = f"¿Cuáles son los {product_type} más baratos?"
-        answer_cheap = f"Los {product_type} más baratos son: " + ";; ".join(
+        answer_cheap = f"Los {product_type} más baratos son:: " + ";; ".join(
             [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_cheap]
         )
         global_questions.append({question_cheap: answer_cheap})
@@ -81,7 +81,7 @@ def generate_delivery_date_questions(data):
     for item in data:
         if 'delivery_date' in item:
             question = f"¿Cuándo estará disponible para entrega el producto {item['title']}?"
-            answer = f"El producto {item['title']} estará disponible para entrega el {item['delivery_date']}."
+            answer = f"El producto {item['title']} estará disponible para entrega el {item['delivery_date']}"
             global_questions.append({question: answer})
 
 def generate_purchase_link_questions(data):
@@ -89,7 +89,7 @@ def generate_purchase_link_questions(data):
     for item in data:
         if 'url' in item:
             question = f"¿Dónde puedo comprar el producto {item['title']}?"
-            answer = f"Puedes comprar el producto {item['title']} [aquí]({item['url']})."
+            answer = f"Puedes comprar el producto {item['title']} [aquí]({item['url']})"
             global_questions.append({question: answer})
 
 def generate_wood_type_questions(data):
@@ -105,7 +105,7 @@ def generate_wood_type_questions(data):
 
         if wood_types:
             question = f"¿Qué tipos de madera tiene el producto {item['title']}?"
-            answer = f"El producto {item['title']} está fabricado con: {';; '.join(wood_types)}."
+            answer = f"El producto {item['title']} está fabricado con:: {';; '.join(wood_types)}"
             global_questions.append({question: answer})
 
 def save_questions_to_json(questions, filename="azure-qna/questions.json"):

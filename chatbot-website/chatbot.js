@@ -70,14 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     
     function formatBotResponse(botResponse) {
-        // Dividir el texto en dos partes: antes y después de ":"
-        const [paragraph, ...listItemsArray] = botResponse.split(/:(.+)/);
-        const listItems = listItemsArray.join(':');
+        // Dividir el texto en dos partes: antes y después de "::"
+        const [paragraph, listItems] = botResponse.split('::');
         
         // Crear el párrafo
         let formattedResponse = `<p>${paragraph.trim()}</p>`;
         
-        // Crear la lista desordenada
+        // Crear la lista desordenada si hay elementos de lista
         if (listItems) {
             const items = listItems.split(';;');
             formattedResponse += '<ul>';
@@ -87,13 +86,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (match) {
                     const text = match[1];
                     const url = match[2];
-                    formattedResponse += `<li><a href="${url}" target="_blank">${text}</a>${item.replace(match[0], '').trim()}</li>`;
+                    formattedResponse += `<li><a href="${url}" target="_blank">${text}</a> ${item.replace(match[0], '').trim()}</li>`;
                 } else {
                     formattedResponse += `<li>${item.trim()}</li>`;
                 }
             });
             formattedResponse += '</ul>';
+        } else {
+            // Procesar enlaces en el párrafo
+            const match = paragraph.match(/\[(.*?)\]\((.*?)\)/);
+            if (match) {
+                const text = match[1];
+                const url = match[2];
+                formattedResponse = `<p>${paragraph.replace(match[0], `<a href="${url}" target="_blank">${text}</a>`).trim()}</p>`;
+            }
         }
+        
         return formattedResponse;
     }
 
@@ -137,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (response.ok) {
                 const botResponse = data.answers?.[0]?.answer || "No tengo una respuesta para eso.";
-                addMessageToChat('bot', botResponse);
+                //addMessageToChat('bot', botResponse);
                 const formattedResponse = formatBotResponse(botResponse);
                 addMessageToChat('bot', formattedResponse, true);
             } else {
