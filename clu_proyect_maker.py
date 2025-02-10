@@ -7,21 +7,140 @@ with open('hifi-data/ibanez.json', 'r', encoding='utf-8') as file:
 with open('azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
     clu_template = json.load(file)
 
-intents_data = []
+intents_data = [
+    {
+        "intent": "saber_precio",
+        "examples": [
+            
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": {
+                    # leer cada product["type"] y hacer una lista de todos
+                    # los product["title"] que coincidan en el tipo
+                }
+            },
+            {
+                "type": "precio",
+                "values": {
+                    "precio": [
+                        "precio", "costo", "valor", "tarifa", "valoración",
+                        "coste", "importe", "cotización", "tasación", "valoracion",
+                        "precio de venta", "precio de compra", "precio de mercado",
+                        "precio de oferta", "precio de catálogo", "precio de referencia",
+                        "precio de lista", "precio de liquidación", "precio de salida",
+                        "precio de saldo", "precio de tarifa", "precio de venta al público"
+                    ],
+                    "rebaja": [
+                        "rebaja", "descuento", "oferta", "promoción", "descuento especial",
+                        "descuento por temporada", "descuento por oferta", "descuento por salida",
+                        "descuento por saldo", "descuento por liquidación", "descuento por lista",
+                        "descuento por promoción", "descuento por venta", "descuento por catálogo",
+                        "descuento por referencia", "descuento por tarifa", "descuento por precio"
+                    ],
+                }
+            }
+        ]
+    },
+    {
+        "intent": "saber_disponibilidad",
+        "examples": [
+            
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": [
+                    # leer cada product["type"] y hacer una lista de todos
+                    # los product["title"] que coincidan en el tipo
+                ]
+            },
+            {
+                "type": "disponibilidad",
+                "values": {
+                    "disponibilidad": [
+                        "disponibilidad", "existencia", "stock", "cantidad", "unidades",
+                        "disponible", "en stock", "en existencia", "en inventario",
+                        "en almacén", "en depósito", "en bodega", "en tienda",
+                        "en local", "en punto de venta", "en comercio", "en establecimiento",
+                        "en mercado", "en línea", "en internet", "en la web"        
+                    ],
+                }
+            }
+        ]
+    },
+    {
+        "intent": "saber_redireccion",
+        "examples": [
+            
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": [
+                    # leer cada product["type"] y hacer una lista de todos
+                    # los product["title"] que coincidan en el tipo
+                ]
+            },
+            {
+                "type": "enlace",
+                "values": {
+                    "enlace": [
+                        "enlace", "link", "url", "dirección", "vínculo", "hipervínculo", "redirección",
+                        "hipervinculo", "dirección web", "dirección url", "dirección de internet"
+                    ],
+                }
+            }
+        ]
+    },
+    {
+        "intent": "saber_caracteristicas",
+        "examples": [
+            
+        ],
+        "entities": [
+            {
+                "type": "producto",
+                "values": [
+                    # leer cada product["type"] y hacer una lista de todos
+                    # los product["title"] que coincidan en el tipo
+                ]
+            },
+            {
+                "type": "caracteristicas",
+                "values": {
+                    "caracteristicas": [
+                        "características", "especificaciones", "detalles", "atributos",
+                        "propiedades", "funciones", "característica", "especificación",
+                        "detalle", "atributo", "propiedad", "función", "caracteristica",
+                        "especificacion", "atributos", "propiedades", "funciones"
+                    ],
+                }
+            }
+        ]
+    }
+]
+
+def synonyms(product):
+    product_type = product["type"][0]
+    for i in intents_data:
+        if 
+        
+        
+    if product_type not in synonyms_list:
+        synonyms_list[product_type] = []
+    if product["title"] not in synonyms_list[product_type]:
+        synonyms_list[product_type].append(product["title"]) 
 
 def generate_intent_examples(product):
     for t in product["type"]:
-        intent_name = "Recomendacion-" + t
-        existing_intent = next((id for id in intents_data if id["intent"] == intent_name), None)
-
         if existing_intent:
             # Evitar agregar duplicados en los valores
             if product["title"] not in existing_intent["entities"][0]["values"]:
                 existing_intent["entities"][0]["values"].append(product["title"])
                 product_title_question = [
                     f"¿Qué opinas de la {product['title']}?",
-                    f"¿Vale la pena comprar la {product['title']}?",
-                    f"¿Es la {product['title']} buena para principiantes?",
                     f"¿Qué características tiene la {product['title']}?",
                     f"¿Dónde puedo conseguir la {product['title']}?",
                     f"¿La {product['title']} tiene buen precio?",
