@@ -25,7 +25,7 @@ intents_data = [
                 "type": "precio",
                 "values": {
                     "precio": [
-                        "precio", "costo", "valor", "tarifa", "valoración",
+                        "precio", "costo", "valor", "tarifa", "valoración", "cuesta",
                         "coste", "importe", "cotización", "tasación", "valoracion",
                         "precio de venta", "precio de compra", "precio de mercado",
                         "precio de oferta", "precio de catálogo", "precio de referencia",
@@ -102,10 +102,10 @@ intents_data = [
         "entities": [
             {
                 "type": "producto",
-                "values": [
+                "values": {
                     # leer cada product["type"] y hacer una lista de todos
                     # los product["title"] que coincidan en el tipo
-                ]
+                }
             },
             {
                 "type": "caracteristicas",
@@ -114,7 +114,10 @@ intents_data = [
                         "características", "especificaciones", "detalles", "atributos",
                         "propiedades", "funciones", "característica", "especificación",
                         "detalle", "atributo", "propiedad", "función", "caracteristica",
-                        "especificacion", "atributos", "propiedades", "funciones"
+                        "especificacion", "atributos", "propiedades", "funciones", "madera",
+                        "caoba", "arce", "Color Negro", "Acabado Natural", "Cuerpo de Acacia", 
+                        "Acacia", "24 trastes", "golpeador", "aliso", "ocume", "Escala de 648", 
+                        "2 pastillas", "Incluye estuche", "Cejilla de hueso", "Signature"
                     ],
                 }
             }
@@ -122,137 +125,178 @@ intents_data = [
     }
 ]
 
-def synonyms(product):
+def generate_synonyms(product):
     product_type = product["type"][0]
     for i in intents_data:
-        if 
+        if product_type not in i["entities"][0]["values"]:
+            i["entities"][0]["values"].append(product_type)
+            i["entities"][0]["values"][product["title"]].append(product["type"])
+            i["entities"][0]["values"][product["title"]].append(product["title"])
+        else:
+            i["entities"][0]["values"][product["title"]].append(product["title"])
         
-        
-    if product_type not in synonyms_list:
-        synonyms_list[product_type] = []
-    if product["title"] not in synonyms_list[product_type]:
-        synonyms_list[product_type].append(product["title"]) 
 
 def generate_intent_examples(product):
     for t in product["type"]:
-        if existing_intent:
-            # Evitar agregar duplicados en los valores
-            if product["title"] not in existing_intent["entities"][0]["values"]:
-                existing_intent["entities"][0]["values"].append(product["title"])
-                product_title_question = [
-                    f"¿Qué opinas de la {product['title']}?",
-                    f"¿Qué características tiene la {product['title']}?",
-                    f"¿Dónde puedo conseguir la {product['title']}?",
-                    f"¿La {product['title']} tiene buen precio?",
-                    f"¿Qué tal su rendimiento la {product['title']}?",
-                    f"¿La {product['title']} es recomendable para su uso?",
-                    f"¿Es duradera la {product['title']}?",
-                    f"¿La {product['title']} tiene buenas críticas?"
-                ]
-                for question in product_title_question:
-                    existing_intent["examples"].append(question)
-        else:
-            # Crear nuevo intent
-            intents_data.append({
-                "intent": intent_name,
-                "examples": [
-                    f"Recomiéndame una {t}",
-                    f"¿Cuál es el mejor {t}?",
-                    f"¿Qué {t} tiene un buen precio?",
-                    f"¿Me puedes recomendar una {t} de buena calidad?",
-                    f"¿Qué {t} tiene más funciones?",
-                    f"¿Qué opinas de la {product['title']}?",
-                    f"¿Vale la pena comprar la {product['title']}?",
-                    f"¿Es la {product['title']} buena para principiantes?",
-                    f"¿Qué características tiene la {product['title']}?",
-                    f"¿Dónde puedo conseguir la {product['title']}?",
-                    f"¿La {product['title']} tiene buen precio?",
-                    f"¿Qué tal su rendimiento la {product['title']}?",
-                    f"¿La {product['title']} es recomendable para su uso?",
-                    f"¿Es duradera la {product['title']}?",
-                    f"¿La {product['title']} tiene buenas críticas?"
-                ],
-                "entities": [
+        for i in intents_data:
+            if i["intent"] == "saber_precio":
+                input = [
                     {
-                        "type": t,
-                        "values": [t, product["title"]]
+                        "¿Cuánto cuesta el " + {product['title']}+ "?": {
+                            "entities": [
+                                {
+                                    "category": "producto",
+                                    "offset": 18,
+                                    "length": {len(product['title'])}
+                                },
+                                {
+                                    "category": "precio",
+                                    "offset": 8,
+                                    "length": 6
+                                }
+                            ]
+                        }
                     }
                 ]
-            })
+                i["examples"].append(input[0])
+            elif i["intent"] == "saber_disponibilidad":
+                input = [
+                    {
+                        "¿Cuándo estaría disponible el " + product['title']+ "?": {
+                            "entities": [
+                                {
+                                    "category": "producto",
+                                    "offset": 31,
+                                    "length": len(product['title'])
+                                },
+                                {
+                                    "category": "disponibilidad",
+                                    "offset": 18,
+                                    "length": 10
+                                }
+                            ]
+                        }
+                    }
+                ]
+                i["examples"].append(input[0])
+            elif i["intent"] == "saber_redireccion":
+                input = [
+                    {
+                        "dame el enlace de " + product['title']: {
+                            "entities": [
+                                {
+                                    "category": "producto",
+                                    "offset": 18,
+                                    "length": len(product['title'])
+                                },
+                                {
+                                    "category": "enlace",
+                                    "offset": 10,
+                                    "length": 6
+                                }
+                            ]
+                        }
+                    }
+                ]
+                i["examples"].append(input[0])
+            elif i["intent"] == "saber_caracteristicas":
+                input = [
+                    {
+                        "dame las caracteristicas de " + product['title']: {
+                            "entities": [
+                                {
+                                    "category": "producto",
+                                    "offset": 31,
+                                    "length": len(product['title'])
+                                },
+                                {
+                                    "category": "precio",
+                                    "offset": 10,
+                                    "length": 14
+                                }
+                            ]
+                        }
+                    }
+                ]
+                i["examples"].append(input[0])
+            else:
+                print("Intent no encontrado.")
+                break
+        
 
-def create_conversational_file(intents_data):
-
-    # Agregar intents
-    for intent in intents_data:
-        clu_template["assets"]["intents"].append({"category": intent["intent"]})
-
-        # Agregar entidades correctamente
-        for entity in intent["entities"]:
-            entity_category = entity["type"]
-            existing_entity = next((e for e in clu_template["assets"]["entities"] if e["category"] == entity_category), None)
-
-            if not existing_entity:
-                # Crear una nueva entidad si no existe
-                new_entity = {
-                    "category": entity_category,
-                    "compositionSetting": "separateComponents",
-                    "list": {"sublists": []}
-                }
-                clu_template["assets"]["entities"].append(new_entity)
-                existing_entity = new_entity
-
-            # Agregar cada modelo como un sublist separado
-            for value in entity["values"]:
-                existing_sublist = next((s for s in existing_entity["list"]["sublists"] if s["listKey"] == value), None)
-
-                if not existing_sublist:
-                    existing_entity["list"]["sublists"].append({
-                        "listKey": value,
-                        "synonyms": [
-                            {
-                                "language": "es",
-                                "values": [value]
-                            }
-                        ]
-                    })
-
-        # Agregar ejemplos de entrenamiento (utterances)
-        for example in intent["examples"]:
-            # Determinar la posición de la entidad en el texto
-            entity_positions = []
-            for entity in intent["entities"]:
-                for value in entity["values"]:
-                    start_index = example.lower().find(value.lower())
-                    if start_index != -1:
-                        entity_positions.append({
-                            "category": entity["type"],
-                            "offset": start_index,
-                            "length": len(value)
-                        })
-
-            clu_template["assets"]["utterances"].append({
-                "text": example,
-                "intent": intent["intent"],
-                "language": "es",
-                "dataset": "train",
-                "entities": entity_positions
-            })
-
-    return clu_template
+#def create_conversational_file(intents_data):
+#
+#    # Agregar intents
+#    for intent in intents_data:
+#        clu_template["assets"]["intents"].append({"category": intent["intent"]})
+#
+#        # Agregar entidades correctamente
+#        for entity in intent["entities"]:
+#            entity_category = entity["type"]
+#            existing_entity = next((e for e in clu_template["assets"]["entities"] if e["category"] == entity_category), None)
+#
+#            if not existing_entity:
+#                # Crear una nueva entidad si no existe
+#                new_entity = {
+#                    "category": entity_category,
+#                    "compositionSetting": "separateComponents",
+#                    "list": {"sublists": []}
+#                }
+#                clu_template["assets"]["entities"].append(new_entity)
+#                existing_entity = new_entity
+#
+#            # Agregar cada modelo como un sublist separado
+#            for value in entity["values"]:
+#                existing_sublist = next((s for s in existing_entity["list"]["sublists"] if s["listKey"] == value), None)
+#
+#                if not existing_sublist:
+#                    existing_entity["list"]["sublists"].append({
+#                        "listKey": value,
+#                        "synonyms": [
+#                            {
+#                                "language": "es",
+#                                "values": [value]
+#                            }
+#                        ]
+#                    })
+#
+#        # Agregar ejemplos de entrenamiento (utterances)
+#        for example in intent["examples"]:
+#            # Determinar la posición de la entidad en el texto
+#            entity_positions = []
+#            for entity in intent["entities"]:
+#                for value in entity["values"]:
+#                    start_index = example.lower().find(value.lower())
+#                    if start_index != -1:
+#                        entity_positions.append({
+#                            "category": entity["type"],
+#                            "offset": start_index,
+#                            "length": len(value)
+#                        })
+#
+#            clu_template["assets"]["utterances"].append({
+#                "text": example,
+#                "intent": intent["intent"],
+#                "language": "es",
+#                "dataset": "train",
+#                "entities": entity_positions
+#            })
+#
+#    return clu_template
 
 # Generar intents
 for product in products:
-    generate_intent_examples(product)
+    generate_synonyms(product)
 
 # Guardar archivo JSON de intents
 with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
     json.dump(intents_data, f, ensure_ascii=False, indent=4)
     
 # Crear JSON de CLU solo una vez después del bucle
-clu_project = create_conversational_file(intents_data)
+# clu_project = create_conversational_file(intents_data)
 
 # Guardar archivo CLU
-with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
-    json.dump(clu_project, f, ensure_ascii=False, indent=4)
+# with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
+#     json.dump(clu_project, f, ensure_ascii=False, indent=4)
 
 print("Archivos generados correctamente.")
