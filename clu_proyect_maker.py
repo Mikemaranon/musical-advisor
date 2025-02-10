@@ -1,7 +1,7 @@
 import json
 
 # Cargar datos de productos
-with open('hifi-data/ibanez.json', 'r', encoding='utf-8') as file:
+with open('hifi-data/data.json', 'r', encoding='utf-8') as file:
     products = json.load(file)
     
 with open('azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
@@ -205,7 +205,7 @@ def generate_intent_examples(product):
                         ]
                     },
                     {
-                        "text": "¿cuales son los " + product["type"] + " mas caros?",
+                        "text": "¿cuales son los " + product["type"][0] + " mas caros?",
                         "entities": [
                             {
                                 "category": "producto",
@@ -220,7 +220,7 @@ def generate_intent_examples(product):
                         ]
                     },
                     {
-                        "text": "¿cuales son los " + product["type"] + " mas baratos?",
+                        "text": "¿cuales son los " + product["type"][0] + " mas baratos?",
                         "entities": [
                             {
                                 "category": "producto",
@@ -363,7 +363,7 @@ def generate_intent_examples(product):
                 
                 i["examples"].append(input[0])
                 i["examples"].append(input[1])
-                if(product["type"] == "guitarra" or product["type"] == "bajo" or product["type"] == "ukelele"):
+                if("guitarra" or  "bajo" or  "ukelele" in product["type"]):
                     i["examples"].append(wood_input[0])
                 
             elif i["intent"] == "mostrar_lista_de_productos":

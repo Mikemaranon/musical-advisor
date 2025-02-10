@@ -2,7 +2,7 @@ import json
 import csv
 from collections import defaultdict
 
-with open('hifi-data/ibanez.json', 'r', encoding='utf-8') as file:
+with open('hifi-data/data.json', 'r', encoding='utf-8') as file:
     products = json.load(file)
 
 global_questions = []
@@ -17,33 +17,11 @@ def generate_keyword_questions(data):
         filtered_items = [item for item in data if any(keyword in feature.lower() for feature in item["features"])]
         
         question = f"¿Qué instrumentos tienen {keyword}?"
-        answer = "Los instrumentos que tienen {0} son:: ".format(keyword) + ";; ".join([f"[{item['title']}]({item['url']})" for item in filtered_items])
+        answer = "Los instrumentos que tienen {0} son:: ".format(keyword) + ";; ".join([f"[{item['title']}]({item['url']})" for item in filtered_items[:10]])
         
         global_questions.append({question: answer})
     
     return global_questions
-
-def generate_discount_questions(data):
-    # Agrupar productos por tipo
-    products_by_type = defaultdict(list)
-    for item in data:
-        for product_type in item.get("type", []):  # Un producto puede tener varios tipos
-            products_by_type[product_type].append(item)
-
-    # Generar preguntas y respuestas
-    questions = []
-    for product_type, products in products_by_type.items():
-        # Ordenar los productos del tipo actual por "price_reduction"
-        top_products = sorted(products, key=lambda x: x.get("price_reduction", 0), reverse=True)[:5]
-
-        # Crear la pregunta
-        question = f"¿Cuáles son l@s {product_type} más rebajados?"
-        answer = f"L@s {product_type} con mayor descuento son:: " + ";; ".join([
-            f"[{item['title']}]({item['url']}) - {item['price_reduction']}% de descuento - {item['current_price']}€"
-            for item in top_products
-        ])
-
-        global_questions.append({question: answer})
 
 def analyze_prices(data):
 
@@ -140,7 +118,6 @@ def generate_text_file_from_questions(questions, filename="azure-qna/azure-quest
     print(f"Se ha creado el archivo {filename} con el formato adecuado.")
 
 generate_keyword_questions(products)            # genera preguntas de palabras clave
-generate_discount_questions(products)           # genera preguntas de descuentos por tipo de producto
 analyze_prices(products)                        # genera preguntas de precios por tipo de producto
 generate_price_questions(products)              # genera preguntas de precios de los productos
 generate_characteristics_questions(products)    # genera preguntas de características de los productos
