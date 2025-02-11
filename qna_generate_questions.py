@@ -4,6 +4,8 @@ from collections import defaultdict
 
 with open('hifi-data/data.json', 'r', encoding='utf-8') as file:
     products = json.load(file)
+with open('hifi-data/types.json', 'r', encoding='utf-8') as file:
+    key_gen = json.load(file)
 
 global_questions = []
 
@@ -20,7 +22,6 @@ def generate_keyword_questions(data):
         answer = "Los instrumentos que tienen {0} son:: ".format(keyword) + ";; ".join([f"[{item['title']}]({item['url']})" for item in filtered_items[:10]])
         
         global_questions.append({question: answer})
-    
     return global_questions
 
 def analyze_prices(data):
@@ -37,21 +38,33 @@ def analyze_prices(data):
         # Ordenar los productos dentro de cada tipo
         top_expensive = sorted(products, key=lambda x: float(x.get("current_price", "0").replace("€", "").replace(",", "").strip()), reverse=True)[:5]
         top_cheap = sorted(products, key=lambda x: float(x.get("current_price", "0").replace("€", "").replace(",", "").strip()))[:5]
-
+        
         # Pregunta de los más caros
-        question_expensive = f"¿Cuáles son los {product_type} más caros?"
-        answer_expensive = f"Los {product_type} más caros son:: " + ";; ".join(
-            [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_expensive]
-        )
+        if (product_type in key_gen[0]):
+            question_expensive = f"¿Cuáles son las {product_type}s más caras?"
+            answer_expensive = f"Las {product_type}s más caras son:: " + ";; ".join(
+                [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_expensive]
+            )
+        else:
+            
+            question_expensive = f"¿Cuáles son los {product_type} más caros?"
+            answer_expensive = f"Los {product_type} más caros son:: " + ";; ".join(
+                [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_expensive]
+            )
         global_questions.append({question_expensive: answer_expensive})
 
         # Pregunta de los más baratos
-        question_cheap = f"¿Cuáles son los {product_type} más baratos?"
-        answer_cheap = f"Los {product_type} más baratos son:: " + ";; ".join(
-            [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_cheap]
-        )
+        if (product_type in key_gen[0]):
+            question_cheap = f"¿Cuáles son las {product_type} más baratas?"
+            answer_cheap = f"Las {product_type} más baratas son:: " + ";; ".join(
+                [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_cheap]
+            )
+        else:
+            question_cheap = f"¿Cuáles son los {product_type} más baratos?"
+            answer_cheap = f"Los {product_type} más baratos son:: " + ";; ".join(
+                [f"[{item['title']}]({item['url']}) - {item['current_price']}" for item in top_cheap]
+            )
         global_questions.append({question_cheap: answer_cheap})
-
     return questions
 
 def generate_price_questions(data):
@@ -61,7 +74,7 @@ def generate_price_questions(data):
             question = f"¿Cuánto cuesta el producto {item['title']}?"
             answer = f"El producto {item['title']} cuesta {item['current_price']}"
             global_questions.append({question: answer})
-
+    
 def generate_characteristics_questions(data):
     # Generar preguntas sobre las características de los productos
     for item in data:
@@ -69,7 +82,7 @@ def generate_characteristics_questions(data):
             question = f"¿Qué características tiene el producto {item['title']}?"
             answer = f"El producto {item['title']} tiene las siguientes características:: {';; '.join(item['features'])}"
             global_questions.append({question: answer})
-
+    
 def generate_delivery_date_questions(data):
     # Generar preguntas sobre la fecha de entrega para cada producto
     for item in data:
@@ -77,7 +90,7 @@ def generate_delivery_date_questions(data):
             question = f"¿Cuándo estará disponible para entrega el producto {item['title']}?"
             answer = f"El producto {item['title']} estará disponible para entrega el {item['delivery_date']}"
             global_questions.append({question: answer})
-
+    
 def generate_purchase_link_questions(data):
     # Generar preguntas con el enlace directo de compra para cada producto
     for item in data:
@@ -85,7 +98,7 @@ def generate_purchase_link_questions(data):
             question = f"¿Dónde puedo comprar el producto {item['title']}?"
             answer = f"Puedes comprar el producto {item['title']} [aquí]({item['url']})"
             global_questions.append({question: answer})
-
+    
 def generate_wood_type_questions(data):
     wood_keywords = [                                       # Lista de maderas comunes
         "pícea", "sapeli", "nyatoh", "nogal", 
@@ -101,7 +114,7 @@ def generate_wood_type_questions(data):
             question = f"¿Qué tipos de madera tiene el producto {item['title']}?"
             answer = f"El producto {item['title']} está fabricado con:: {';; '.join(wood_types)}"
             global_questions.append({question: answer})
-
+    
 def save_questions_to_json(questions, filename="azure-qna/questions.json"):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(questions, f, ensure_ascii=False, indent=4)
@@ -144,10 +157,10 @@ with open(tsv_filename, 'w', newline='', encoding='utf-8') as tsv_file:
     
     # Escribir la cabecera del archivo TSV
     tsv_writer.writerow(["Question", "Answer", "Source", "Metadata", "SuggestedQuestions", "IsContextOnly", "Prompts", "QnaId", "SourceDisplayName"])
-
+    
     # Inicializar un contador para QnaId
     qna_id = 1
-
+    
     # Recorrer todas las preguntas generadas
     for question_dict in global_questions:
         for question, answer in question_dict.items():
@@ -164,6 +177,7 @@ with open(tsv_filename, 'w', newline='', encoding='utf-8') as tsv_file:
                     qna_id,
                     "ask-hifi"  # Fuente o nombre que desees, en este caso se ha dejado como ejemplo
                 ])
-                qna_id += 1  # Incrementar el QnaId para la siguiente pregunta
+                qna_id += 1 # Incrementar el contador de QnaId
+                
 
 print(f"El archivo TSV ha sido creado como {tsv_filename}")

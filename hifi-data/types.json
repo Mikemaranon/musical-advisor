@@ -1,0 +1,33 @@
+[
+    {
+        "guitarra": "f",
+        "cuerdas": "f",
+        "banqueta": "f",
+        "funda": "f",
+        "signature": "f",
+        "trompeta": "f",
+        "flauta": "f",
+        "bateria": "f",
+        "correa": "f",
+        "pua": "f",
+        "pick": "f",
+        "strap": "f"
+    },
+    {
+        "bajo": "m",
+        "pedal": "m",
+        "ukelele": "m",
+        "estuche": "m",
+        "saxofon": "m",
+        "clarinete": "m",
+        "amplificador": "m",
+        "cable": "m",
+        "jack": "m",
+        "cajon": "m",
+        "piano": "m",
+        "teclado": "m",
+        "microfono": "m",
+        "sintetizador": "m",
+        "paño": "m"
+    }
+]
