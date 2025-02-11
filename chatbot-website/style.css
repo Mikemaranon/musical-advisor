@@ -60,6 +60,8 @@ body {
     max-height: 590px; /* Establece la altura máxima que deseas */
     overflow-y: scroll;  /* Agrega el scroll vertical cuando el contenido exceda la altura */
     padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #1e1e1e;
 }
 
 .question-container {
@@ -181,4 +183,28 @@ body {
 
 p {
     margin: 0;
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+    .chat-container {
+        height: calc(100% - 31.6%); /* Adjust height to account for Safari top bar */
+    }
+
+    .chat-box {
+        height: 390px;
+    }
+
+    .intent-container, .question-container {
+        height: 94%;
+    }
+
+    .question-box {
+        max-height: 543px;
+    }
+
+    .chat-input {
+        width: calc(100% - 43%);
+    }
 }
