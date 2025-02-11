@@ -1,6 +1,16 @@
 const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
 const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview";
 
+function formatAnalysisResponse(botResponse) {
+    botResponse = botResponse.replace(/_/g, ' ');
+    return botResponse;
+}
+
+function addLow(botResponse) {
+    botResponse = botResponse.replaceAll(' ', '_');
+    return botResponse;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const chatBox = document.querySelector('.chat-box');
     const chatInput = document.querySelector('.chat-input');
@@ -146,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             if (response.ok) {
                 const botResponse = data.result?.prediction?.topIntent || "No se pudo determinar la intención.";
-                addMessageToChat('analysis', formatAnalysisResponse(botResponse), true);
+                addMessageToChat('analysis', "intención: " + formatAnalysisResponse(botResponse), true);
             } else {
                 console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
                 addMessageToChat('analysis', `Error en la respuesta de Azure: ${data?.error?.message}`);
@@ -155,12 +165,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Error al conectar con Azure:", error);
             addMessageToChat('analysis', "Error al obtener la respuesta.");
         }
-    }
-
-    function formatAnalysisResponse(botResponse) {
-        botResponse = botResponse.replace(/_/g, ' ');
-        let response = "intención: " + botResponse;
-        return response;
     }
 
     async function sendMessageToModel(message) {

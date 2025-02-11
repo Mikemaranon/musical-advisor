@@ -10,15 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <h1 class="title">Ask Hifi</h1>
-    <div class="chat-container">   
-        <div>
-            <div class="chat-box"></div>
-            <button id="random-button" class="send-button">Random</button>
-            <input type="text" class="chat-input" placeholder="Type a message...">
-            <button id="send-button" class="send-button">Send</button> 
-        </div>
-    </div>
+    <main class="grid-container">
+        <section class="intent-container">
+            <h2>Intents</h2>
+        </section>
+        <section>
+        <h1 class="title">Ask Hifi</h1>
+            <div class="chat-container">   
+                <div>
+                    <div class="chat-box"></div>
+                    <button id="random-button" class="send-button">Random</button>
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Type a message...">
+                    <button id="send-button" class="send-button">Send</button> 
+                </div>
+            </div>
+        </section>
+        <section class="question-container">
+            <div>
+                <h2>Questions</h2>
+                <div class="question-box">
+
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="chatbot.js"></script>
+    <script src="display-intents.js"></script>
 </body>
 </html>

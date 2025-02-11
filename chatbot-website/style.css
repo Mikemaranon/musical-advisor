@@ -4,23 +4,76 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Evita el scroll */
 }
 
 .title {
     font-family: "Orbitron", serif;
     font-size: 3rem;
     text-align: center;
+    width: auto;
     color: #00ffcc; /* Color neón */
     text-shadow: 0 0 10px #00ffcc, 0 0 20px #008080;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #111; /* Fondo oscuro */
+    background-color: transparent; /* Fondo oscuro */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.intent-container {
+    position: relative;
+    width: 87%;
+    height: calc(100% - 7.8%);
+    margin: 10px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.intent, .question{
+    background-color: #3c3c3c;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    margin-right: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intent:hover, .question:hover {
+    background-color: #5a5a5a;
+}
+
+.question-box {
+    position: relative;
+    max-height: 590px; /* Establece la altura máxima que deseas */
+    overflow-y: scroll;  /* Agrega el scroll vertical cuando el contenido exceda la altura */
+    padding: 10px;
+}
+
+.question-container {
+    width: 87%;
+    height: calc(100% - 7.8%);
+    margin: 10px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .chat-container {
-    width: 100%;
-    max-width: 600px;
+    width: 100% auto;
     margin: 50px auto;
     background-color: #1e1e1e;
     border-radius: 10px;
@@ -39,15 +92,18 @@ body {
     margin-bottom: 1%;
 }
 
-.chat-box::-webkit-scrollbar {
+.chat-box::-webkit-scrollbar,
+.question-box::-webkit-scrollbar {
     width: 8px;
 }
 
-.chat-box::-webkit-scrollbar-track {
+.chat-box::-webkit-scrollbar-track,
+.question-box::-webkit-scrollbar-track {
     background: #1e1e1e; /* Match the background color of the chat container */
 }
 
-.chat-box::-webkit-scrollbar-thumb {
+.chat-box::-webkit-scrollbar-thumb,
+.question-box::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
 }
