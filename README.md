@@ -15,5 +15,15 @@ Cuando tengamos el entrenamiento listo, desplegamos el modelo.
 Accediendo a `chatbot-website/chatbot.html` tendremos ya listo todo lo necesario para poder empezar a usar el bot. Introduce en `keys.json` la clave API y el endpoint de tu proyecto.  
 En el caso de que no los reconozca bien, puedes introducirlos manualmente dentro del código JS en la función `sendMessageToModel` en las variables `endpoint` y `subscriptionKey`. Realizar el mismo proceso con las claves de conversational model en la función `analyzeConversation`
 
-![image](https://github.com/user-attachments/assets/c704b7c0-dc89-4650-9ef9-3258073aab02)
+# Ask-HiFi: Como usar el Bot
+Este bot esta conectado a servicios de azure que emplean herramientas de Inteligencia Artificial Tradicional. Su funcionamiento no es comparable a cualquier otro chatbot de IA generativa (como Copilot, DeepSeek o ChatGPT). Esto es un proyecto realizado en poco tiempo y no ha podido ser entrenado con los suficientes datos para poder abarcar un caso realista, por lo que es muy posible que muchas preguntas no puedan ser identificadas correctamente en la base de datos generada mediante los scripts.  
+Para poder solventar este problema he añadido las secciones de los laterales las cuales generan preguntas directamente desde la base de datos con la que se ha alimentado al bot, de esta forma se puede ver su rendimiento en el caso óptimo. Se pueden generar preguntas manualmente las cuales si tienen las palabras clave adecuadas también serán respondidas aunque no siempre con éxito.  
+
+> ⚠️ **Advertencia:**
+La intención de este proyecto es poder observar como se tratan las interacciones con el bot para que este identifique las intenciones del usuario junto con una respuesta apropiada a la pregunta tras su respectivo entrenamiento.  
+Porfavor, cualquier propuesta y critica constructiva para ayudar a mejorar este proyecto es bienvenida puesto que su unica finalidad es ayudar a mi proceso formativo en el uso de sercicios de Azure e IA.   
+
+
+![image](https://github.com/user-attachments/assets/9440eff6-d445-4e25-974d-aa747f55057b)
+
 
