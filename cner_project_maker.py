@@ -42,7 +42,7 @@ def generate_json_from_files(directory):
     return dataset
 
 # Generate the dataset
-dataset = generate_json_from_files("azure-cner/src/txt_outputs")
+dataset = generate_json_from_files("hifi-data/data.json")
 
 # Save the dataset to a new JSON file
 with open("Azure/azure-cner/cner_project.json", "w", encoding="utf-8") as output_file:
