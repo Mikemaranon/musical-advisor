@@ -4,10 +4,10 @@ import json
 with open('hifi-data/data.json', 'r', encoding='utf-8') as file:
     products = json.load(file)
     
-with open('azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
+with open('Azure/azure-clu/conversational-template.json', 'r', encoding='utf-8') as file:
     clu_template = json.load(file)
 
-with open("azure-clu/keywords.txt") as f:
+with open("Azure/azure-clu/keywords.txt") as f:
     keywords = [line.strip().lower() for line in f]
 
 executed_mostrar_lista_de_productos = False
@@ -444,7 +444,7 @@ for product in products:
 
 # Guardar archivo JSON de intents
 try: 
-    with open('azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
+    with open('Azure/azure-clu/structured-entities.json', 'w', encoding='utf-8') as f:
         json.dump(intents_data, f, ensure_ascii=False, indent=4)
     print("archivo JSON guardado correctamente.")
 except Exception as e:
@@ -454,7 +454,7 @@ except Exception as e:
 clu_project = create_conversational_file(intents_data)
 
 # Guardar archivo CLU
-with open('azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
+with open('Azure/azure-clu/clu_project.json', 'w', encoding='utf-8') as f:
     json.dump(clu_project, f, ensure_ascii=False, indent=4)
 
 print("Archivos generados correctamente.")

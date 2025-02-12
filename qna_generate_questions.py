@@ -11,7 +11,7 @@ global_questions = []
 
 def generate_keyword_questions(data):
     keywords = []
-    with open("azure-qna/keywords.txt") as f:
+    with open("Azure/azure-qna/keywords.txt") as f:
         keywords = [line.strip().lower() for line in f]
 
     # Generar preguntas y respuestas para cada palabra clave
@@ -115,13 +115,13 @@ def generate_wood_type_questions(data):
             answer = f"El producto {item['title']} está fabricado con:: {';; '.join(wood_types)}"
             global_questions.append({question: answer})
     
-def save_questions_to_json(questions, filename="azure-qna/questions.json"):
+def save_questions_to_json(questions, filename="Azure/azure-qna/questions.json"):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(questions, f, ensure_ascii=False, indent=4)
     
     print(f"Se han guardado las preguntas en {filename}")
     
-def generate_text_file_from_questions(questions, filename="azure-qna/azure-questions.txt"):
+def generate_text_file_from_questions(questions, filename="Azure/azure-qna/azure-questions.txt"):
     question_number = 1
     with open(filename, "w", encoding="utf-8") as f:
         for item in questions:
@@ -149,7 +149,7 @@ global_questions.append(                    # añade el número total de pregunt
 save_questions_to_json(global_questions)
 
 # Definir el nombre del archivo de salida TSV
-tsv_filename = "azure-qna/questions_for_azure.tsv"
+tsv_filename = "Azure/azure-qna/questions_for_azure.tsv"
 
 # Abrir el archivo TSV para escritura
 with open(tsv_filename, 'w', newline='', encoding='utf-8') as tsv_file:

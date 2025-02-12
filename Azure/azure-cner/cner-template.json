@@ -1,0 +1,15 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "CustomEntityRecognition",
+        "storageInputContainerName": "articles",
+        "settings": {
+            "confidenceThreshold": 0
+        },
+        "projectName": "Ordenador-Entidades",
+        "multilingual": true,
+        "description": "",
+        "language": "es"
+    }
+}
