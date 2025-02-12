@@ -21,9 +21,9 @@ Para poder solventar este problema he añadido las secciones de los laterales la
 
 > ⚠️ **Advertencia:**
 La intención de este proyecto es poder observar como se tratan las interacciones con el bot para que este identifique las intenciones del usuario junto con una respuesta apropiada a la pregunta tras su respectivo entrenamiento.  
-Porfavor, cualquier propuesta y critica constructiva para ayudar a mejorar este proyecto es bienvenida puesto que su unica finalidad es ayudar a mi proceso formativo en el uso de sercicios de Azure e IA.   
+Porfavor, cualquier propuesta y critica constructiva para ayudar a mejorar este proyecto es bienvenida puesto que su unica finalidad es ayudar a mi proceso formativo en el uso de sercicios de Azure e IA.  
 
 
 ![image](https://github.com/user-attachments/assets/9440eff6-d445-4e25-974d-aa747f55057b)
 
-
+> ⚠️ **Advertencia:** La colaboración por parte de [Leo Narváez](https://github.com/leo-narvaez) Es un error debido a no haber gestionado bien las credenciales desde uno de los dispositivos desde donde hice push. Aun así os invito a ver su perfil donde tiene proyectos muy interesantes! 
