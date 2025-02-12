@@ -1,4 +1,4 @@
-# Chatbot de preguntas y respuestas
+# Chatbot interactivo para recomendar productos en [Madrid HiFi](https://www.madridhifi.com)
 Este proyecto consiste en un chatbot que responde preguntas usando los servicios de Azure Cognitive Language Services. Ha sido entrenado scrappeando el contenido de Madrid Hifi, una tienda de instrumentos musicales.  
 ## 1: Web Scrapping
 Ejecutando `Madrid-HiFi.py` puedes extraer los datos introduciendo el fabricante del que te gustaría recolectar.  
