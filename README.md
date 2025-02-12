@@ -8,7 +8,8 @@ Ejecutando `qna_generate_questions.py` analizarás el JSON creado en el paso 1 p
 Creando un proyecto de preguntas y respuestas en Azure Cognitive Language Services, importamos el TSV como datos de entrenamiento para que genere los pares automáticamente.  
 Posteriormente lanzamos el proyecto para que sea accesible a través de la red
 ## 4: CLU en azure
-Creamos un proyecto conversacional en Azure Cognitive Language Service subiendo el archivo `clu_proyect.json`, acto seguido entrenamos el modelo en modo avanzado (ya que la información está en español y el modo gratuito solo soporta inglés), tras 15 minutos estará listo.  
+Ejecutamos el script `clu_project_maker.py` para generar nuestro archivo json de proyecto con toda la información ya clasificada.  
+Creamos un proyecto conversacional en Azure Cognitive Language Service subiendo el archivo generado en `azure-clu/clu_proyect.json`, acto seguido entrenamos el modelo en modo avanzado (ya que la información está en español y el modo gratuito solo soporta inglés), tras 15 minutos estará listo (depende de la cantidad de datos que hayamos metido en el modelo).  
 Cuando tengamos el entrenamiento listo, desplegamos el modelo.
 ## 5: Chatbot en la web
 Accediendo a `chatbot-website/chatbot.html` tendremos ya listo todo lo necesario para poder empezar a usar el bot. Introduce en `keys.json` la clave API y el endpoint de tu proyecto.  
