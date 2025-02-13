@@ -1,10 +1,10 @@
 {
     "guitarra": [
-        "pastillas", "bobina", "golpeador", "varillas", 
-        "estuche", "oientación", "escudo", "tensor", "pickguard", 
-        "rosca", "cabezal", "trémolo", "nut", "montaje", "estructura", 
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "montaje", "estructura", "cejilla",
         "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
-        "pivote", "tornillos", "barniz", "bloques", "refuerzo", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
         "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
         "muelle", "base", "regulador", "guía", "pintura", "puerto", 
         "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
@@ -12,7 +12,22 @@
         "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
         "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
         "cuerdas", "trastes", "puente", "clavijero", "resonador", 
-        "afinación", "pastillas", "bobina", "golpeador", "varillas", "estuche"
+        "afinación", "bobina", "golpeador", "varillas", "estuche"
+    ],
+    "signature": [
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "nut", "montaje", "estructura", "cejilla",
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", 
+        "afinación", "bobina", "golpeador", "varillas", "estuche"
     ],
     "pedal": [
         "pedal", "efectos", "pedalera", "sonido"
@@ -24,10 +39,19 @@
         "amplificador", "sonido", "controlador", "potencia", "instrumento"
     ],
     "bajo": [
-        "mástil", "cuerpo", "diapasón", "escala", 
-        "color", "cuerdas", "trastes", "puente", "clavijero", 
-        "resonador", "afinación", "pastillas", "bobina", "golpeador", 
-        "varillas", "estuche"
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "nut", "montaje", "estructura", "cejilla",
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", 
+        "afinación", "bobina", "golpeador", "varillas", "estuche"
     ],
     "piano": [
         "teclas", "martillos", "pedales", 
