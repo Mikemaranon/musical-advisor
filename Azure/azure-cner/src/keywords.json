@@ -1,17 +1,51 @@
-[
-    "zurdos", "escudo", "tensor", "pickguard", "rosca", "cabezal", "sistema_trémolo",  
-    "nut", "montaje", "estructura", "tensión", "roseta", "hueso", "silleta", "varillaje",  
-    "sordina_integrada", "muelles", "pivote", "tornillos", "barniz", "bloques", "refuerzo",  
-    "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", "muelle", "base",  
-    "regulador", "guía", "pintura", "puerto", "disipador", "laca", "tapón", "modulador",  
-    "anillo", "ajuste", "dimensiones", "adhesivo", "protector", "cubierta", "bisagra",  
-    "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", "canal",
-	"mástil", "cuerpo", "diapasón", "escala", "color", "cuerdas", "trastes", "puente",  
-    "clavijero", "resonador", "afinación", "teclas", "válvulas", "boquilla", "parche",  
-    "casco", "octavas", "lengüeta", "tubo", "pabellón", "tambores", "pedales", "digitación",  
-    "baquetas", "sordina", "fuelle", "caja", "martillos", "arco", "cuerda_material",  
-    "num_cuerdas", "num_trastes", "material_teclas", "campana", "llaves", "deslizante",  
-    "membrana", "num_válvulas", "material_tubo", "sistema_mecánico", "pastillas",  
-    "bobina", "golpeador", "varillas", "estuche", "transpositor", "embocadura", "sistema_sostenido",  
-    "caja_armónica", "silenciador", "sensor"
-]
+{
+    "guitarra": [
+        "pastillas", "bobina", "golpeador", "varillas", 
+        "estuche", "oientación", "escudo", "tensor", "pickguard", 
+        "rosca", "cabezal", "trémolo", "nut", "montaje", "estructura", 
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", 
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", 
+        "afinación", "pastillas", "bobina", "golpeador", "varillas", "estuche"
+    ],
+    "pedal": [
+        "pedal", "efectos", "pedalera", "sonido"
+    ],
+    "cable": [
+        "cable", "conector", "corriente", "alimentación"
+    ],
+    "amplificador": [
+        "amplificador", "sonido", "controlador", "potencia", "instrumento"
+    ],
+    "bajo": [
+        "mástil", "cuerpo", "diapasón", "escala", 
+        "color", "cuerdas", "trastes", "puente", "clavijero", 
+        "resonador", "afinación", "pastillas", "bobina", "golpeador", 
+        "varillas", "estuche"
+    ],
+    "piano": [
+        "teclas", "martillos", "pedales", 
+        "caja", "material"
+    ],
+    "teclado": [
+        "teclas", "sonidos", "cuerda_material", "pedales", 
+        "material_teclas", "caja", "madera"
+    ],
+    "trompeta": [
+        "válvulas", "boquilla", "campana", "llaves", "deslizante", 
+        "embocadura"
+    ],
+    "batería": [
+        "parche", "casco", "tambores", "pedales", "baquetas", 
+        "sordina"
+    ],
+    "saxofón": [
+        "octavas", "lengüeta", "tubo", "pabellón", "estuche"
+    ]
+}
