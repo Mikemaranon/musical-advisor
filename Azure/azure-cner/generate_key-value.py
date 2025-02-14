@@ -46,7 +46,7 @@ system_message = {
     )
 }
 
-def save_times(times, filename="Azure/azure-cner/src/times.json"):
+def save_times(filename="Azure/azure-cner/src/times.json"):
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(times, f, indent=4, ensure_ascii=False)
 
@@ -72,7 +72,10 @@ def save_json(data, directory, filename):
 def generar_texto(prompt, index):
     payload = {
         "model": "deepseek-r1",
-        "messages": [{"role": "user", "content": prompt}]
+        "messages": [
+            system_message,
+            {"role": "user", "content": prompt}
+        ]
     }
     
     start_time = time.time()  # Inicia el temporizador
@@ -144,7 +147,7 @@ def process_dataset(dataset_file, keywords_file, output_directory):
         # Añadir una espera de 10 segundos entre cada solicitud
         time.sleep(60)
         
-save_times(times)
+# save_times(times)
 
 # Ejemplo de uso
 process_dataset("hifi-data/data.json", "Azure/azure-cner/src/keywords.json", "Azure/azure-cner/src/key-values")
