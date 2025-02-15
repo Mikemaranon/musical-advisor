@@ -1,42 +1,237 @@
 [
     {
-        "title": "Ibanez GRG170 DX BKN Guitarra Eléctrica",
-        "current_price": "268,00 €",
-        "old_price": "289,00 €",
-        "price_reduction": 7.27,
+        "title": "Ibanez AZ2407F-BSR Guitarra Electrica",
+        "current_price": "2.149,00 €",
+        "old_price": "2.799,00 €",
+        "price_reduction": 23.22,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
-        "url": "https://www.madridhifi.com/p/ibanez-grg170-dx-bkn/",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-az2407fbsr/",
         "type": [
             "guitarra"
         ],
         "features": [
-            "Humbucker PSND1 (mástil) + single coil PSNDS (centro) + humbucker PSND2 (puente)",
-            "hardware cromado",
-            "cuerpo de tiglio",
-            "mástil GRG1 de arce",
-            "diapasón en palosanto de 24 trastes medium con incrustaciones de diente de tiburón",
-            "puente FAT 10 con palanca"
+            "Guitarra Eléctrica",
+            "Estilo Strato",
+            "Cuerpo de tilo",
+            "Tapa de arce flameado",
+            "Mástil de arce tostado",
+            "Diapasón de arce tostado",
+            "Unión del mástil: Atornillada (bolt-on)",
+            "Forma del mástil en 'C' ovalada AZ",
+            "Incrustaciones de puntos de abulón",
+            "24 trastes Jumbo",
+            "Cejilla de hueso",
+            "Anchura de cejilla: 42 mm (1,65\")",
+            "Longitud de escala de 648 mm (25,51\")",
+            "Radio del diapasón de 305 mm (12,01\")",
+            "Grosor del mástil en el traste 1: 21 mm",
+            "Grosor del mástil en el traste 12: 23 mm",
+            "Pastilla DiMarzio the Tone Zone (H) (puente)",
+            "Pastilla DiMarzio True Velvet (S) (intermedia)",
+            "Pastilla DiMarzio Air Norton (H) (mástil)",
+            "Control de volumen",
+            "Control de tono",
+            "Interruptor de 5 posiciones",
+            "Trémolo Gotoh T1502S",
+            "Acabado de los herrajes: Cromo",
+            "Clavijas de afinación Gotoh MG-T con bloqueo",
+            "Incluye estuche",
+            "Color: Brownish Sphalerite",
+            "Acabado: Poliéster brillante",
+            "Cuerdas originales: .010 - .046",
+            "Fabricada en Japón"
         ]
     },
     {
-        "title": "Ibanez GSA60 BS Guitarra Eléctrica",
-        "current_price": "219,00 €",
-        "old_price": "249,00 €",
-        "price_reduction": 12.05,
+        "title": "Ibanez TR Mini Pedal Efectos",
+        "current_price": "108,00 €",
+        "old_price": "115,00 €",
+        "price_reduction": 6.09,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
-        "url": "https://www.madridhifi.com/p/ibanez-gsa60-bs/",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-tr-mini/",
+        "type": [
+            "pedal"
+        ],
+        "features": [
+            "Pedal de efectos",
+            "Para guitarra eléctrica y bajo",
+            "Efecto de trémolo",
+            "Controles: Onda, Velocidad y Profundidad",
+            "LED de encendido de efectos",
+            "Interruptor de pedal para encendido/apagado (bypass auténtico)",
+            "Entrada jack de 1/4\"",
+            "Salida jack de 1/4\"",
+            "Entrada para fuente de alimentación con conector de barril de 2.1 x 5.5 mm y centro negativo",
+            "Funciona con fuente de alimentación de 9V DC (no incluida)",
+            "Dimensiones: 60 x 93 x 56 mm",
+            "Peso: 270 g (0,6 libras)",
+            "Fabricado en Japón"
+        ]
+    },
+    {
+        "title": "Ibanez DC501L Cable Distribución Corriente",
+        "current_price": "13,90 €",
+        "old_price": "17,88 €",
+        "price_reduction": 22.26,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-dc501l/",
+        "type": [
+            "cable"
+        ],
+        "features": [
+            "Para hasta 5 efectos",
+            "Conectores pequeños en ángulo recto",
+            "Cable de núcleo grueso 20 AWG",
+            "Con tapas aislantes"
+        ]
+    },
+    {
+        "title": "Ibanez TCY10E BK Guitarra Electro Acústica",
+        "current_price": "209,00 €",
+        "old_price": "259,00 €",
+        "price_reduction": 19.31,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-tcy10e-bk/",
         "type": [
             "guitarra"
         ],
         "features": [
-            "Single coil PSND-S (mástil y centro) + humbucker PSND-H (puente)",
+            "Tapa de abeto",
+            "fondo, lados y mástil de caoba",
+            "diapasón y puente en palosanto",
+            "pastilla IBZ Under Saddle",
+            "preamplificador AEQ200T con afinador",
+            "cejuela y selleta de Ivorex II",
+            "clavijas puente Advantage",
+            "clavijero Smooth Tuner AS cromado",
+            "cutaway",
+            "Color Negro"
+        ]
+    },
+    {
+        "title": "Ibanez GSRM20BGB-WNF Bajo eléctrico Mikro",
+        "current_price": "198,00 €",
+        "old_price": "219,00 €",
+        "price_reduction": 9.59,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-gsrm20bgb-wnf/",
+        "type": [
+            "bajo"
+        ],
+        "features": [
+            "Cuerpo de caoba",
+            "Mástil de arce",
+            "22 trastes medium",
+            "Diapasón de palosanto con inlay de punto",
+            "Puente B10",
+            "Pastillas Dynamix estilo P/J",
+            "Escala corta: 28,6 (726mm)",
+            "Acabado: Nogal liso (Walnut Flat)"
+        ]
+    },
+    {
+        "title": "Ibanez GRX40-CA Guitarra Eléctrica",
+        "current_price": "188,00 €",
+        "old_price": "199,00 €",
+        "price_reduction": 5.53,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-grx40-ca/",
+        "type": [
+            "guitarra"
+        ],
+        "features": [
+            "Guitarra eléctrica de la serie GIO ",
+            "Cuerpo de Poplar",
+            "Mástil GRX de arce",
+            "Diapasón de Jatoba con incrustaciones de puntos blancos. ",
+            "22 Trastes medium",
+            "Pastillas Infinity RS S (mástil) - Infinity RS S (medio) - Infinity R H (puente)",
+            "Puente T106 Tremolo",
+            "Acabado: Candy Apple",
+            "Herrajes cromados"
+        ]
+    },
+    {
+        "title": "Ibanez EWP12EWB-OPN Guitarra Picolo",
+        "current_price": "239,00 €",
+        "old_price": "299,00 €",
+        "price_reduction": 20.07,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-ewp12ewbopn/",
+        "type": [
+            "guitarra"
+        ],
+        "features": [
+            "Guitarra Picolo",
+            "Con cutaway y pastilla",
+            "Cuerpo de acacia",
+            "Mástil de ocume",
+            "Diapasón y puente de corazón púrpura",
+            "Longitud de escala de 432 mm",
+            "Anchura de cejilla de 42 mm",
+            "Longitud total de 69 cm",
+            "Roseta de abulón",
+            "Acabado: Natural a poro abierto",
+            "Electrónica: Pastilla Ibanez baja la selleta",
+            "Preamplificador Ibanez AEQ2U con afinador",
+            "Incluye funda",
+            "Afinación de fábrica: 1La, 2Mi, 3Do, 4Sol, 5Re, 6La"
+        ]
+    },
+    {
+        "title": "Ibanez RG421QM-CBB Guitarra Eléctrica",
+        "current_price": "457,00 €",
+        "old_price": "550,80 €",
+        "price_reduction": 17.03,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-rg421qm-cbb/",
+        "type": [
+            "guitarra"
+        ],
+        "features": [
+            "Color: Cerulean Blue Burst",
+            "Construcción: Cuerpo sólido",
+            "Forma del cuerpo: Modelo Modern-Strat",
+            "Número de cuerdas: 6 cuerdas",
+            "Construcción mástil: Atornillado",
+            "Número de trastes: 24",
+            "Longitud escala: 25,5\" (648 mm)",
+            "Cuerpo: Meranti",
+            "Tapa armónica: Quilted Maple Furnier",
+            "Mástil: Arce",
+            "Perfil del mástil: Wizard III",
+            "Diapasón: Jatoba"
+        ]
+    },
+    {
+        "title": "Ibanez GRG 140 White Guitarra Eléctrica",
+        "current_price": "258,00 €",
+        "old_price": "299,00 €",
+        "price_reduction": 13.71,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-grg-140-w/",
+        "type": [
+            "guitarra"
+        ],
+        "features": [
+            "Single coil STDS (mástil + centro)",
+            "humbucker STDH2 (puente)",
             "hardware cromado",
-            "cuerpo de caoba",
-            "mástil SA de arce",
-            "diapasón en palosanto de 22 trastes medium",
-            "puente SAT 10 con palanca"
+            "cuerpo de tiglio",
+            "mástil GRG de arce",
+            "diapasón en palosanto",
+            "24 trastes medium",
+            "puente FAT 10 con palanca",
+            "golpeador blanco"
         ]
     },
     {
@@ -45,7 +240,7 @@
         "old_price": "399,00 €",
         "price_reduction": 21.05,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-as53-tf/",
         "type": [
             "guitarra"
@@ -75,7 +270,7 @@
         "old_price": "229,00 €",
         "price_reduction": 17.47,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-pf15-bk/",
         "type": [
             "guitarra"
@@ -96,7 +291,7 @@
         "old_price": "289,00 €",
         "price_reduction": 4.15,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-gsr200-bk-bajo-electrico/",
         "type": [
             "bajo"
@@ -117,7 +312,7 @@
         "old_price": "289,00 €",
         "price_reduction": 10.73,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-gsr200b-wnf/",
         "type": [
             "bajo"
@@ -138,7 +333,7 @@
         "old_price": "219,00 €",
         "price_reduction": 10.96,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-gsr180-bk/",
         "type": [
             "bajo"
@@ -158,7 +353,7 @@
         "old_price": "329,00 €",
         "price_reduction": 18.24,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-tcm50-vbs/",
         "type": [
             "guitarra"
@@ -185,7 +380,7 @@
         "old_price": "289,00 €",
         "price_reduction": 17.99,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-ga5tce-am/",
         "type": [
             "guitarra"
@@ -211,7 +406,7 @@
         "old_price": "299,00 €",
         "price_reduction": 28.09,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-grg121dx-bkf/",
         "type": [
             "guitarra"
@@ -234,7 +429,7 @@
         "old_price": "379,00 €",
         "price_reduction": 22.69,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-aw54-ce-opn/",
         "type": [
             "guitarra"
@@ -260,7 +455,7 @@
         "old_price": "239,00 €",
         "price_reduction": 4.6,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-tmb30-bk/",
         "type": [
             "bajo"
@@ -285,7 +480,7 @@
         "old_price": "99,00 €",
         "price_reduction": 9.09,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-csmini/",
         "type": [
             "pedal"
@@ -307,7 +502,7 @@
         "old_price": "1.799,00 €",
         "price_reduction": 18.34,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-jem77p-bfp-premium/",
         "type": [
             "signature"
@@ -333,7 +528,7 @@
         "old_price": "229,00 €",
         "price_reduction": 0.44,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-pgmm31-wh/",
         "type": [
             "guitarra"
@@ -353,7 +548,7 @@
         "old_price": "419,00 €",
         "price_reduction": 10.5,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-rga42fm-blf/",
         "type": [
             "guitarra"
@@ -375,7 +570,7 @@
         "old_price": "299,00 €",
         "price_reduction": 26.09,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-grx70qa-tbb/",
         "type": [
             "guitarra"
@@ -393,12 +588,40 @@
         ]
     },
     {
+        "title": "Ibanez PF15ECE TBS Guitarra Acústica Electrificada ( REACONDICIONADO )",
+        "current_price": "189,61 €",
+        "old_price": "259,00 €",
+        "price_reduction": 26.79,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-pf15ece-tbs-reacondicionado/",
+        "type": [
+            "guitarra"
+        ],
+        "features": [
+            "Cuerpo Dreadnought",
+            "Tapa de pícea",
+            "Aros y fondo de caoba",
+            "Mástil de caoba",
+            "Diapasón de palisandro",
+            "20 trastes",
+            "Longitud de la escala: 650 mm",
+            "Ancho de la cejilla: 42,0 mm",
+            "Pastilla Ibanez bajo la selleta",
+            "Electrónica Ibanez AEQ200T con afinador incorporado",
+            "Puente de palisandro",
+            "Clavijas de afinación die-cast (fundición)",
+            "Herrajes cromados",
+            "Color: Transparent Blue Sunburst"
+        ]
+    },
+    {
         "title": "Ibanez JEMJRSP-PK Signature Steve Vai",
         "current_price": "535,00 €",
         "old_price": "599,00 €",
         "price_reduction": 10.68,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-jemjrsp-pk/",
         "type": [
             "signature"
@@ -427,7 +650,7 @@
         "old_price": "413,00 €",
         "price_reduction": 13.08,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-af55l-tf/",
         "type": [
             "guitarra"
@@ -448,7 +671,7 @@
         "old_price": "299,00 €",
         "price_reduction": 29.77,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-grg131dx-bkf/",
         "type": [
             "guitarra"
@@ -464,12 +687,35 @@
         ]
     },
     {
+        "title": "Ibanez UB804-MOB Bass Workshop Fretless + Soporte y Funda",
+        "current_price": "1.025,00 €",
+        "old_price": "1.059,00 €",
+        "price_reduction": 3.21,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-ub804-mob/",
+        "type": [
+            "funda"
+        ],
+        "features": [
+            "pastilla AeroSilk Piezo",
+            "Electrónica AeroSilk Piezo con control de tono avtivo",
+            "Cuerpo de arce",
+            "Mástil UB40 5 piezas de arce y nogal neck-through",
+            "Fretless",
+            "Diapasón de jatoba",
+            "Puente Custom AeroSilk MR5",
+            "Hardware negro mate",
+            "Incluye soporte TAMA Roadpro y funda"
+        ]
+    },
+    {
         "title": "Ibanez AW70ECE Nt Guitarra Acústica Electrificada ( REACONDICIONADO )",
         "current_price": "233,81 €",
         "old_price": "336,00 €",
         "price_reduction": 30.41,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-aw70ece-nt-reacondicionado/",
         "type": [
             "guitarra"
@@ -498,7 +744,7 @@
         "old_price": "499,00 €",
         "price_reduction": 22.44,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-af55-tkf/",
         "type": [
             "guitarra"
@@ -522,7 +768,7 @@
         "old_price": "219,00 €",
         "price_reduction": 0.46,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-gsrm20b-wk/",
         "type": [
             "bajo"
@@ -544,7 +790,7 @@
         "old_price": "239,00 €",
         "price_reduction": 10.04,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-tmb30-mgr/",
         "type": [
             "bajo"
@@ -570,7 +816,7 @@
         "old_price": "249,00 €",
         "price_reduction": 24.19,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-pf15ece-bk-reacondicionado/",
         "type": [
             "guitarra"
@@ -594,7 +840,7 @@
         "old_price": "329,00 €",
         "price_reduction": 10.33,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-aeg50n-nt/",
         "type": [
             "guitarra"
@@ -623,7 +869,7 @@
         "old_price": "1.469,00 €",
         "price_reduction": 1.7,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-rgd61alet-mgm/",
         "type": [
             "guitarra"
@@ -661,7 +907,7 @@
         "old_price": "2.199,00 €",
         "price_reduction": 18.64,
         "availability": "En stock",
-        "delivery_date": "el Thursday 13/Friday 14",
+        "delivery_date": "el Monday 17/Tuesday 18",
         "url": "https://www.madridhifi.com/p/ibanez-rg5170g-svf/",
         "type": [
             "guitarra"
@@ -697,6 +943,46 @@
             "Color: Silver Flat",
             "Cuerdas de fábrica: D'Addario EXL120 (calibres.009 - .042)",
             "Fabricada en Japón"
+        ]
+    },
+    {
+        "title": "Ibanez DCS50-DB Correa para Guitarra y Bajo Azul",
+        "current_price": "14,80 €",
+        "old_price": "16,90 €",
+        "price_reduction": 12.43,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-dcs50-db/",
+        "type": [
+            "correa"
+        ],
+        "features": [
+            "Correa para guitarra o bajo eléctrico",
+            "Designer Collection Serie",
+            "Color: Azul ",
+            "Anchura: 50 mm",
+            "Longitud ajustable hasta aprox. 1700 mm",
+            "Con extremos seguros fabricados en cuero"
+        ]
+    },
+    {
+        "title": "Ibanez DCS50D-MGN Correa para Guitarra y Bajo Verde Musgo",
+        "current_price": "16,00 €",
+        "old_price": "16,90 €",
+        "price_reduction": 5.33,
+        "availability": "En stock",
+        "delivery_date": "el Monday 17/Tuesday 18",
+        "url": "https://www.madridhifi.com/p/ibanez-dcs50d-mgn/",
+        "type": [
+            "correa"
+        ],
+        "features": [
+            "Correa para guitarra o bajo",
+            "Designer Collection Series",
+            "Color: Verde Musgo",
+            "Anchura: 50 mm",
+            "Ajustable hasta aprox. 1.700 mm",
+            "Extremos de cuero seguros"
         ]
     }
 ]

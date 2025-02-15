@@ -151,6 +151,8 @@ def process_dataset(dataset_file, keywords_file, output_directory):
                 print(f"No se encontraron coincidencias en 'features' para el producto {i+1}")
         
         time.sleep(60)
+        if i % 5 == 0:
+            time.sleep(100)
         
 # save_times(times)
 
