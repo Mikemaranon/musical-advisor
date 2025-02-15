@@ -12,7 +12,7 @@
         "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
         "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
         "cuerdas", "trastes", "puente", "clavijero", "resonador", 
-        "afinación", "bobina", "golpeador", "varillas", "estuche"
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
     ],
     "signature": [
         "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
@@ -27,13 +27,14 @@
         "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
         "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
         "cuerdas", "trastes", "puente", "clavijero", "resonador", 
-        "afinación", "bobina", "golpeador", "varillas", "estuche"
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
     ],
     "pedal": [
-        "pedal", "efectos", "pedalera", "sonido"
+        "pedal", "efectos", "pedalera", "sonido", "controlador", "potencia", "bypass", 
+        "fuente", "fabricado"
     ],
     "cable": [
-        "cable", "conector", "corriente", "alimentación"
+        "cable", "conector", "corriente", "alimentación", "aislante"
     ],
     "amplificador": [
         "amplificador", "sonido", "controlador", "potencia", "instrumento"
@@ -51,7 +52,7 @@
         "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
         "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
         "cuerdas", "trastes", "puente", "clavijero", "resonador", 
-        "afinación", "bobina", "golpeador", "varillas", "estuche"
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
     ],
     "piano": [
         "teclas", "martillos", "pedales", 

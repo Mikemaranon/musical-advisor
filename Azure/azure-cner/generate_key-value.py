@@ -5,6 +5,9 @@ from dotenv import load_dotenv
 import time
 import re
 
+def normalize_str(s):
+    return re.sub(r'\W+', '', s).lower()
+
 # Cargar variables de entorno desde el archivo .env
 load_dotenv()
 
@@ -35,16 +38,17 @@ except requests.exceptions.RequestException as e:
 
 times = {}
 
-system_message = {
-    "role": "system",
-    "content": (
-        "Eres un asistente experto en generación de documentos comerciales a partir de datos desestructurados. "
-        "Debes generar un único párrafo que describa todas las claves del JSON de entrada, "
-        "incluyendo sus valores sin editar. Debe de haber un hilo narrativo a lo largo del texto, \n"
-        "no puede ser meramente descriptivo."
-        "El contenido debe ser atractivo para el usuario final, con una intención comercial clara."
-    )
-}
+# system_message = {
+#     "role": "system",
+#     "content": (
+#         "Eres un asistente experto en generación de documentos comerciales a partir de datos desestructurados. "
+#         "Debes generar un único párrafo que describa todas las claves del JSON de entrada, "
+#         "incluyendo sus valores sin editar. Debe de haber un hilo narrativo a lo largo del texto, \n"
+#         "no puede ser meramente descriptivo."
+#         "El contenido debe ser atractivo para el usuario final, con una intención comercial clara."
+#         "primero genera un mensaje respondiendo solamente al mensaje de usuario, luego genera el texto final siguiendo las instrucciones que te he dado aqui."
+#     )
+# }
 
 def save_times(filename="Azure/azure-cner/src/times.json"):
     with open(filename, 'w', encoding='utf-8') as f:
@@ -73,7 +77,7 @@ def generar_texto(prompt, index):
     payload = {
         "model": "deepseek-r1",
         "messages": [
-            system_message,
+            # system_message,
             {"role": "user", "content": prompt}
         ]
     }
@@ -130,13 +134,15 @@ def process_dataset(dataset_file, keywords_file, output_directory):
             filtered_data['type'] = product['type'][0]
             
             for p in keywords:
-                if product['type'][0] == p:
-                    for feature in product['features']:
-                        for keyword in keywords[p]:
-                            if keyword in feature:
-                                filtered_data[keyword] = feature
-                                break
-                                
+                if product['type'][0] != p:
+                    continue
+                
+                for feature in product['features']:
+                    for keyword in keywords[p]:
+                        if normalize_str(keyword) in normalize_str(feature):
+                            filtered_data[keyword] = feature
+                            break;
+            
             if filtered_data:
                 filename = f"product_{i+1}.json"
                 save_json(filtered_data, output_directory, filename)
@@ -144,7 +150,6 @@ def process_dataset(dataset_file, keywords_file, output_directory):
             else:
                 print(f"No se encontraron coincidencias en 'features' para el producto {i+1}")
         
-        # Añadir una espera de 10 segundos entre cada solicitud
         time.sleep(60)
         
 # save_times(times)
