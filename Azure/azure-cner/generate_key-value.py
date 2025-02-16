@@ -38,18 +38,6 @@ except requests.exceptions.RequestException as e:
 
 times = {}
 
-# system_message = {
-#     "role": "system",
-#     "content": (
-#         "Eres un asistente experto en generación de documentos comerciales a partir de datos desestructurados. "
-#         "Debes generar un único párrafo que describa todas las claves del JSON de entrada, "
-#         "incluyendo sus valores sin editar. Debe de haber un hilo narrativo a lo largo del texto, \n"
-#         "no puede ser meramente descriptivo."
-#         "El contenido debe ser atractivo para el usuario final, con una intención comercial clara."
-#         "primero genera un mensaje respondiendo solamente al mensaje de usuario, luego genera el texto final siguiendo las instrucciones que te he dado aqui."
-#     )
-# }
-
 def save_times(filename="Azure/azure-cner/src/times.json"):
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(times, f, indent=4, ensure_ascii=False)
@@ -77,7 +65,6 @@ def generar_texto(prompt, index):
     payload = {
         "model": "deepseek-r1",
         "messages": [
-            # system_message,
             {"role": "user", "content": prompt}
         ]
     }
