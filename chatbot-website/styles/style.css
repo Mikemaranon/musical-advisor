@@ -21,6 +21,17 @@ body {
     background-color: transparent; /* Fondo oscuro */
 }
 
+.title a {
+    transition: all 0.3s ease;
+}
+
+.title a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #008080;
+    transform: translateY(-15px);
+    transition: transform 0.1s ease-in-out;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -208,3 +219,8 @@ p {
         width: calc(100% - 43%);
     }
 }
+
+.model {
+    display: none;
+}
+

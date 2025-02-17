@@ -3,11 +3,11 @@
     "stringIndexType": "Utf16CodeUnit",
     "metadata": {
         "projectKind": "CustomEntityRecognition",
-        "storageInputContainerName": "articles",
+        "storageInputContainerName": "txt",
         "settings": {
             "confidenceThreshold": 0
         },
-        "projectName": "Ordenador-Entidades",
+        "projectName": "Ask-Hifi-L3",
         "multilingual": true,
         "description": "",
         "language": "es"
@@ -117,434 +117,762 @@
         ],
         "documents": [
             {
-                "location": "texto_1.txt",
+                "location": "text_1.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 2566,
-                    "labels": [
-                        {
-                            "category": "precio",
-                            "offset": 2456,
-                            "length": 6
-                        },
-                        {
-                            "category": "cuerpo",
-                            "offset": 2241,
-                            "length": 6
-                        },
-                        {
-                            "category": "tapa",
-                            "offset": 868,
-                            "length": 4
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 1543,
-                            "length": 6
-                        },
-                        {
-                            "category": "trastes",
-                            "offset": 1224,
-                            "length": 7
-                        },
-                        {
-                            "category": "escala",
-                            "offset": 1191,
-                            "length": 6
-                        },
-                        {
-                            "category": "pastilla",
-                            "offset": 2124,
-                            "length": 8
-                        },
-                        {
-                            "category": "afinación",
-                            "offset": 1434,
-                            "length": 9
-                        },
-                        {
-                            "category": "estuche",
-                            "offset": 405,
-                            "length": 7
-                        },
-                        {
-                            "category": "color",
-                            "offset": 273,
-                            "length": 5
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1194,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 0,
+                                "length": 37
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 381,
+                                "length": 10
+                            },
+                            {
+                                "category": "type",
+                                "offset": 71,
+                                "length": 8
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 495,
+                                "length": 14
+                            },
+                            {
+                                "category": "tapa",
+                                "offset": 511,
+                                "length": 21
+                            },
+                            {
+                                "category": "mástil",
+                                "offset": 557,
+                                "length": 40
+                            },
+                            {
+                                "category": "diapasón",
+                                "offset": 599,
+                                "length": 37
+                            },
+                            {
+                                "category": "trastes",
+                                "offset": 677,
+                                "length": 16
+                            },
+                            {
+                                "category": "cejilla",
+                                "offset": 695,
+                                "length": 33
+                            },
+                            {
+                                "category": "escala",
+                                "offset": 638,
+                                "length": 37
+                            },
+                            {
+                                "category": "pastilla",
+                                "offset": 758,
+                                "length": 41
+                            },
+                            {
+                                "category": "volumen",
+                                "offset": 801,
+                                "length": 18
+                            },
+                            {
+                                "category": "trémolo",
+                                "offset": 821,
+                                "length": 20
+                            },
+                            {
+                                "category": "afinación",
+                                "offset": 843,
+                                "length": 44
+                            },
+                            {
+                                "category": "estuche",
+                                "offset": 998,
+                                "length": 15
+                            },
+                            {
+                                "category": "color",
+                                "offset": 919,
+                                "length": 26
+                            },
+                            {
+                                "category": "cuerdas",
+                                "offset": 956,
+                                "length": 31
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_10.txt",
+                "location": "text_10.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1314,
-                    "labels": [
-                        {
-                            "category": "precio",
-                            "offset": 1165,
-                            "length": 6
-                        },
-                        {
-                            "category": "tapa",
-                            "offset": 191,
-                            "length": 4
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 265,
-                            "length": 6
-                        },
-                        {
-                            "category": "diapasón",
-                            "offset": 350,
-                            "length": 8
-                        },
-                        {
-                            "category": "escala",
-                            "offset": 994,
-                            "length": 6
-                        },
-                        {
-                            "category": "trastes",
-                            "offset": 386,
-                            "length": 7
-                        },
-                        {
-                            "category": "pastillas",
-                            "offset": 495,
-                            "length": 9
-                        },
-                        {
-                            "category": "volumen",
-                            "offset": 677,
-                            "length": 7
-                        },
-                        {
-                            "category": "puente",
-                            "offset": 739,
-                            "length": 6
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1146,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 46
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 419,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 459,
+                                "length": 44
+                            },
+                            {
+                                "category": "type",
+                                "offset": 123,
+                                "length": 8
+                            },
+                            {
+                                "category": "tapa",
+                                "offset": 595,
+                                "length": 23
+                            },
+                            {
+                                "category": "mástil",
+                                "offset": 622,
+                                "length": 33
+                            },
+                            {
+                                "category": "diapasón",
+                                "offset": 659,
+                                "length": 19
+                            },
+                            {
+                                "category": "escala",
+                                "offset": 727,
+                                "length": 26
+                            },
+                            {
+                                "category": "trastes",
+                                "offset": 757,
+                                "length": 17
+                            },
+                            {
+                                "category": "pastillas",
+                                "offset": 816,
+                                "length": 33
+                            },
+                            {
+                                "category": "volumen",
+                                "offset": 853,
+                                "length": 32
+                            },
+                            {
+                                "category": "puente",
+                                "offset": 889,
+                                "length": 13
+                            },
+                            {
+                                "category": "color",
+                                "offset": 928,
+                                "length": 19
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_11.txt",
+                "location": "text_11.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1471,
-                    "labels": [
-                        {
-                            "category": "tapa",
-                            "offset": 1043,
-                            "length": 4
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 602,
-                            "length": 6
-                        },
-                        {
-                            "category": "diapasón",
-                            "offset": 1245,
-                            "length": 8
-                        },
-                        {
-                            "category": "puente",
-                            "offset": 677,
-                            "length": 6
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1114,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 32
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 486,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 526,
+                                "length": 44
+                            },
+                            {
+                                "category": "type",
+                                "offset": 101,
+                                "length": 8
+                            },
+                            {
+                                "category": "tapa",
+                                "offset": 662,
+                                "length": 13
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_2.txt",
+                "location": "text_12.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1934,
-                    "labels": [
-                        {
-                            "category": "pedal",
-                            "offset": 1115,
-                            "length": 5
-                        },
-                        {
-                            "category": "efectos",
-                            "offset": 710,
-                            "length": 7
-                        },
-                        {
-                            "category": "fuente",
-                            "offset": 1258,
-                            "length": 6
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1060,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 31
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 418,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 458,
+                                "length": 61
+                            },
+                            {
+                                "category": "type",
+                                "offset": 118,
+                                "length": 4
+                            },
+                            {
+                                "category": "pastillas",
+                                "offset": 739,
+                                "length": 41
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_3.txt",
+                "location": "text_13.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 738,
-                    "labels": [
-                        {
-                            "category": "conector",
-                            "offset": 692,
-                            "length": 8
-                        },
-                        {
-                            "category": "aislante",
-                            "offset": 523,
-                            "length": 8
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1046,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 45
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 425,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 465,
+                                "length": 48
+                            },
+                            {
+                                "category": "type",
+                                "offset": 53,
+                                "length": 4
+                            },
+                            {
+                                "category": "pastillas",
+                                "offset": 731,
+                                "length": 41
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 275,
+                                "length": 15
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_4.txt",
+                "location": "text_14.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1598,
-                    "labels": [
-                        {
-                            "category": "mástil",
-                            "offset": 536,
-                            "length": 6
-                        },
-                        {
-                            "category": "pastilla",
-                            "offset": 730,
-                            "length": 8
-                        },
-                        {
-                            "category": "puente",
-                            "offset": 617,
-                            "length": 6
-                        },
-                        {
-                            "category": "clavijero",
-                            "offset": 1066,
-                            "length": 9
-                        },
-                        {
-                            "category": "color",
-                            "offset": 1258,
-                            "length": 5
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1062,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 31
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 445,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 485,
+                                "length": 46
+                            },
+                            {
+                                "category": "type",
+                                "offset": 39,
+                                "length": 4
+                            },
+                            {
+                                "category": "pastillas",
+                                "offset": 741,
+                                "length": 22
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 199,
+                                "length": 14
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_5.txt",
+                "location": "text_15.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1377,
-                    "labels": [
-                        {
-                            "category": "trastes",
-                            "offset": 561,
-                            "length": 7
-                        },
-                        {
-                            "category": "nut",
-                            "offset": 1072,
-                            "length": 3
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 0,
+                        "labels": []
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_6.txt",
+                "location": "text_2.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1365,
-                    "labels": [
-                        {
-                            "category": "cuerpo",
-                            "offset": 400,
-                            "length": 6
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 423,
-                            "length": 6
-                        },
-                        {
-                            "category": "trastes",
-                            "offset": 636,
-                            "length": 7
-                        },
-                        {
-                            "category": "pastillas",
-                            "offset": 703,
-                            "length": 9
-                        },
-                        {
-                            "category": "puente",
-                            "offset": 775,
-                            "length": 6
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 942,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 28
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 333,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 373,
+                                "length": 44
+                            },
+                            {
+                                "category": "type",
+                                "offset": 96,
+                                "length": 5
+                            },
+                            {
+                                "category": "pedal",
+                                "offset": 511,
+                                "length": 62
+                            },
+                            {
+                                "category": "efectos",
+                                "offset": 577,
+                                "length": 27
+                            },
+                            {
+                                "category": "fuente",
+                                "offset": 650,
+                                "length": 58
+                            },
+                            {
+                                "category": "fabricado",
+                                "offset": 712,
+                                "length": 18
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_7.txt",
+                "location": "text_3.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1638,
-                    "labels": [
-                        {
-                            "category": "pastilla",
-                            "offset": 364,
-                            "length": 8
-                        },
-                        {
-                            "category": "cuerpo",
-                            "offset": 225,
-                            "length": 6
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 438,
-                            "length": 6
-                        },
-                        {
-                            "category": "diapasón",
-                            "offset": 504,
-                            "length": 8
-                        },
-                        {
-                            "category": "escala",
-                            "offset": 628,
-                            "length": 6
-                        },
-                        {
-                            "category": "cejilla",
-                            "offset": 665,
-                            "length": 7
-                        },
-                        {
-                            "category": "roseta",
-                            "offset": 792,
-                            "length": 6
-                        },
-                        {
-                            "category": "preamplificador",
-                            "offset": 944,
-                            "length": 15
-                        },
-                        {
-                            "category": "afinación",
-                            "offset": 1115,
-                            "length": 9
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 735,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 42
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 315,
+                                "length": 7
+                            },
+                            {
+                                "category": "url",
+                                "offset": 354,
+                                "length": 43
+                            },
+                            {
+                                "category": "conector",
+                                "offset": 485,
+                                "length": 35
+                            },
+                            {
+                                "category": "cable",
+                                "offset": 561,
+                                "length": 29
+                            },
+                            {
+                                "category": "aislante",
+                                "offset": 594,
+                                "length": 19
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_8.txt",
+                "location": "text_4.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1579,
-                    "labels": [
-                        {
-                            "category": "cuerpo",
-                            "offset": 1086,
-                            "length": 6
-                        },
-                        {
-                            "category": "cuerdas",
-                            "offset": 748,
-                            "length": 7
-                        },
-                        {
-                            "category": "mástil",
-                            "offset": 851,
-                            "length": 6
-                        },
-                        {
-                            "category": "trastes",
-                            "offset": 604,
-                            "length": 7
-                        },
-                        {
-                            "category": "escala",
-                            "offset": 762,
-                            "length": 6
-                        },
-                        {
-                            "category": "tapa",
-                            "offset": 439,
-                            "length": 4
-                        },
-                        {
-                            "category": "perfil",
-                            "offset": 648,
-                            "length": 6
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1012,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 42
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 357,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 397,
+                                "length": 46
+                            },
+                            {
+                                "category": "type",
+                                "offset": 124,
+                                "length": 8
+                            },
+                            {
+                                "category": "tapa",
+                                "offset": 535,
+                                "length": 13
+                            },
+                            {
+                                "category": "color",
+                                "offset": 814,
+                                "length": 11
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             },
             {
-                "location": "texto_9.txt",
+                "location": "text_5.txt",
                 "language": "es",
-                "entities": {
-                    "regionOffset": 0,
-                    "regionLength": 1154,
-                    "labels": [
-                        {
-                            "category": "mástil",
-                            "offset": 204,
-                            "length": 6
-                        },
-                        {
-                            "category": "puente",
-                            "offset": 541,
-                            "length": 6
-                        },
-                        {
-                            "category": "cuerpo",
-                            "offset": 135,
-                            "length": 6
-                        },
-                        {
-                            "category": "diapasón",
-                            "offset": 285,
-                            "length": 8
-                        },
-                        {
-                            "category": "trastes",
-                            "offset": 355,
-                            "length": 7
-                        },
-                        {
-                            "category": "golpeador",
-                            "offset": 778,
-                            "length": 9
-                        }
-                    ]
-                },
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1058,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 41
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 370,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 410,
+                                "length": 50
+                            },
+                            {
+                                "category": "type",
+                                "offset": 110,
+                                "length": 4
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 552,
+                                "length": 15
+                            },
+                            {
+                                "category": "mástil",
+                                "offset": 571,
+                                "length": 14
+                            },
+                            {
+                                "category": "diapasón",
+                                "offset": 589,
+                                "length": 40
+                            },
+                            {
+                                "category": "puente",
+                                "offset": 670,
+                                "length": 10
+                            },
+                            {
+                                "category": "pastillas",
+                                "offset": 684,
+                                "length": 28
+                            },
+                            {
+                                "category": "escala",
+                                "offset": 742,
+                                "length": 26
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "text_6.txt",
+                "language": "es",
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 933,
+                        "labels": [
+                            {
+                                "category": "type",
+                                "offset": 115,
+                                "length": 8
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "text_7.txt",
+                "language": "es",
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1137,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 35
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 363,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 403,
+                                "length": 48
+                            },
+                            {
+                                "category": "type",
+                                "offset": 110,
+                                "length": 8
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 543,
+                                "length": 16
+                            },
+                            {
+                                "category": "mástil",
+                                "offset": 563,
+                                "length": 15
+                            },
+                            {
+                                "category": "diapasón",
+                                "offset": 582,
+                                "length": 36
+                            },
+                            {
+                                "category": "escala",
+                                "offset": 667,
+                                "length": 28
+                            },
+                            {
+                                "category": "cejilla",
+                                "offset": 699,
+                                "length": 27
+                            },
+                            {
+                                "category": "roseta",
+                                "offset": 730,
+                                "length": 16
+                            },
+                            {
+                                "category": "preamplificador",
+                                "offset": 823,
+                                "length": 41
+                            },
+                            {
+                                "category": "afinación",
+                                "offset": 868,
+                                "length": 51
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "text_8.txt",
+                "language": "es",
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 1045,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 37
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 373,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 413,
+                                "length": 48
+                            },
+                            {
+                                "category": "type",
+                                "offset": 123,
+                                "length": 8
+                            },
+                            {
+                                "category": "color",
+                                "offset": 840,
+                                "length": 26
+                            },
+                            {
+                                "category": "cuerpo",
+                                "offset": 553,
+                                "length": 15
+                            },
+                            {
+                                "category": "cuerdas",
+                                "offset": 693,
+                                "length": 28
+                            },
+                            {
+                                "category": "mástil",
+                                "offset": 612,
+                                "length": 12
+                            },
+                            {
+                                "category": "trastes",
+                                "offset": 725,
+                                "length": 21
+                            },
+                            {
+                                "category": "escala",
+                                "offset": 750,
+                                "length": 31
+                            },
+                            {
+                                "category": "tapa",
+                                "offset": 572,
+                                "length": 36
+                            },
+                            {
+                                "category": "perfil",
+                                "offset": 785,
+                                "length": 29
+                            },
+                            {
+                                "category": "diapasón",
+                                "offset": 628,
+                                "length": 16
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "text_9.txt",
+                "language": "es",
+                "entities": [
+                    {
+                        "regionOffset": 0,
+                        "regionLength": 990,
+                        "labels": [
+                            {
+                                "category": "name",
+                                "offset": 2,
+                                "length": 39
+                            },
+                            {
+                                "category": "precio",
+                                "offset": 403,
+                                "length": 8
+                            },
+                            {
+                                "category": "url",
+                                "offset": 443,
+                                "length": 46
+                            },
+                            {
+                                "category": "type",
+                                "offset": 121,
+                                "length": 8
+                            },
+                            {
+                                "category": "trastes",
+                                "offset": 718,
+                                "length": 17
+                            }
+                        ]
+                    }
+                ],
                 "dataset": "Train"
             }
         ]

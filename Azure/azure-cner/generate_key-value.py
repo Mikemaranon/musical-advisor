@@ -27,14 +27,14 @@ payload = {
     "messages": [{"role": "user", "content": "Hola, prueba de conexión"}]
 }
 
-try:
-    response = requests.post(f"{ENDPOINT}/v1/chat/completions", json=payload, headers=HEADERS, timeout=10)
-    print("Código de respuesta:", response.status_code)
-    print("Respuesta:", response.text)
-except requests.exceptions.Timeout:
-    print("Warning: La solicitud tarda demasiado en responder.")
-except requests.exceptions.RequestException as e:
-    print("Error en la solicitud:", e)
+# try:
+#     response = requests.post(f"{ENDPOINT}/v1/chat/completions", json=payload, headers=HEADERS, timeout=10)
+#     print("Código de respuesta:", response.status_code)
+#     print("Respuesta:", response.text)
+# except requests.exceptions.Timeout:
+#     print("Warning: La solicitud tarda demasiado en responder.")
+# except requests.exceptions.RequestException as e:
+#     print("Error en la solicitud:", e)
 
 system_message = {
     "role": "system",
@@ -111,16 +111,15 @@ def process_dataset(dataset_file, keywords_file, output_directory):
     keywords = load_keywords(keywords_file)
     dataset = load_dataset(dataset_file)
     
-    i = 11
-    
-    for product in enumerate(dataset):
+    i = 0
+    for product in dataset:
         
         filtered_data = {}
         
         # Filtra solo la clave 'features' si está presente en el producto
         if 'features' in product:
             
-            generar_documento(product, "Azure/azure-cner/src/texts", i + 1)
+            #generar_documento(product, "Azure/azure-cner/src/texts", i + 1)
 
             filtered_data['name'] = product['title']
             filtered_data['precio'] = product['current_price']
@@ -144,9 +143,8 @@ def process_dataset(dataset_file, keywords_file, output_directory):
             else:
                 print(f"No se encontraron coincidencias en 'features' para el producto {i+1}")
         
-        time.sleep(60)
+        #time.sleep(60)
         i += 1
-        
 # save_times(times)
 
 # Ejemplo de uso

@@ -3,11 +3,11 @@
     "stringIndexType": "Utf16CodeUnit",
     "metadata": {
         "projectKind": "CustomEntityRecognition",
-        "storageInputContainerName": "articles",
+        "storageInputContainerName": "txt",
         "settings": {
             "confidenceThreshold": 0
         },
-        "projectName": "Ordenador-Entidades",
+        "projectName": "Ask-Hifi-L3",
         "multilingual": true,
         "description": "",
         "language": "es"

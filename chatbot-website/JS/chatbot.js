@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const chatBox = document.querySelector('.chat-box');
     const chatInput = document.querySelector('.chat-input');
     const randomButton = document.querySelector('#random-button'); // Seleccionar el botón
+    const model = document.querySelector('.model').textContent.trim(); 
     let questions = []; // Inicializamos un array vacío para las preguntas
 
     chatInput.addEventListener('keypress', function(event) {
@@ -27,11 +28,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function sendMessage() {
         const message = chatInput.value.trim();
-        if (message !== "") {
-            addMessageToChat('user', message);
-            chatInput.value = "";
-            sendMessageToModel(message);
+        switch(model) {
+            case 'L1-L2':
+                if (message !== "") {
+                    addMessageToChat('user', message);
+                    chatInput.value = "";
+                    sendMessageToModel_L1(message);
+                }
+                break;
+            case 'L3': 
+            if (message !== "") {
+                    addMessageToChat('user', message);
+                    chatInput.value = "";
+                    sendMessageToModel_L3(message);
+                }   
+                break;
+            defaul: console.warn("no model detected!")
         }
+        
     }
 
     function addMessageToChat(sender, message, isHTML = false) {
@@ -47,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Cargar preguntas desde JSON
-    fetch('../../azure-qna/questions.json') // Sube dos niveles desde chatbot-website
+    fetch('../../../Azure/azure-qna/questions.json') // Sube dos niveles desde chatbot-website
         .then(response => response.json())
         .then(data => {
             console.log('Archivo JSON cargado correctamente', questions);
@@ -115,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return formattedResponse;
     }
 
-    async function analyzeConversation(query, participantId = "user", language = "es") {
+    async function analyzeConversation_L2(query, participantId = "user", language = "es") {
         const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview";
         const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
     
@@ -167,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    async function sendMessageToModel(message) {
+    async function sendMessageToModel_L1(message) {
     
         const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ask-hifi&api-version=2021-10-01&deploymentName=production";
         const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
@@ -194,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             // Call analyzeConversation and get the output
-            const analysisOutput = await analyzeConversation(message);
+            const analysisOutput = await analyzeConversation_L2(message);
 
             const response = await fetch(endpoint, {
                 method: "POST",
@@ -223,4 +237,62 @@ document.addEventListener('DOMContentLoaded', function() {
             addMessageToChat('bot', "Error al obtener la respuesta.");
         }
     } 
+
+    async function sendMessageToModel_L3(message) {
+        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/analyze-text/jobs?api-version=2022-10-01-preview";
+        const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
+    
+        const requestBody = {
+            "tasks": [
+                {
+                    "kind": "CustomEntityRecognition",
+                    "parameters": {
+                        "projectName": "Ask-Hifi-L3",
+                        "deploymentName": "Ask-Hifi-L3",
+                        "stringIndexType": "TextElement_v8"
+                    }
+                }
+            ],
+            "displayName": "CustomTextPortal_CustomEntityRecognition",
+            "analysisInput": {
+                "documents": [
+                    {
+                        "id": "document_CustomEntityRecognition",
+                        "text": message,
+                        "language": "es"  // Cambia "en" si necesitas otro idioma
+                    }
+                ]
+            }
+        };
+    
+        console.log("Enviando petición a Azure con:", JSON.stringify(requestBody, null, 2));
+    
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Ocp-Apim-Subscription-Key": subscriptionKey,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(requestBody)
+            });
+    
+            const data = await response.json();
+            console.log("Respuesta recibida de Azure:", data);
+    
+            if (response.ok) {
+                const botResponse = data.answers?.[0]?.answer || "No tengo una respuesta para eso.";
+                //addMessageToChat('bot', botResponse);
+                const formattedResponse = formatBotResponse(botResponse);
+                addMessageToChat('bot', formattedResponse, true);
+            } else {
+                console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
+                addMessageToChat('bot', `Error en la respuesta de Azure: ${data?.error?.message}`);
+            }
+    
+        } catch (error) {
+            console.error("Error al conectar con Azure:", error);
+            addMessageToChat('bot', "Error al obtener la respuesta.");
+        }
+    }    
 });

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         chatInput.value = text; // Asignar el texto al campo de entrada
     }
 
-    fetch('../../azure-clu/clu_project.json')
+    fetch('../../../Azure/azure-clu/clu_project.json')
         .then(response => response.json())
         .then(data => {
             jsonData = data;

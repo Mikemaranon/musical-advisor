@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Selection</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Chatbot Selection Page</h1>
+        <h1>Bienvenido a Madrid-Hifi chatbot selection</h1>
     </header>
     <main>
         <section id="chatbot-selection">
-            <h2>Select a Chatbot to Interact With</h2>
-            <div class="chatbot-option">
-                <a href="chatbot1.html">Ask-Hifi v1</a>
-            </div>
-            <div class="chatbot-option">
-                <a href="chatbot2.html">Ask-Hifi v2</a>
+            <h2>Selecciona un chatbot con el que interactuar</h2>
+            <div class="options">
+                <div class="chatbot-option">
+                    <div class="description">
+                        Ask-Hifi-L1 es la primera versión de nuestro ChatBot para recomendación de productos de Madrid Hifi. Entrenado
+                        con un banco de hasta 400 preguntas frecuentes abordando todo tipo de productos, Este bot es ideal para resolver 
+                        cualquier duda que tengas<br><br>
+                        Ask-Hifi-L2 utiliza un algoritmo de identificación de palabras clave para poder percibir la intención del usuario
+                        y así poder dar una mejor recomendación de las respuestas
+                    </div>
+                    <div class="opt-button">
+                        <a href="chatbots/chatbot1.html">Ask-Hifi L1 + L2</a>  
+                    </div>
+                    
+                </div>
+                <div class="chatbot-option">
+                    <div class="description">
+                        Ask-Hifi-L3 es nuestro último modelo, capaz de establecer conversaciones para recomendar productos en función de
+                        las características que el usuario desee conocer.
+                    </div>
+                    <div class="opt-button">
+                        <a href="chatbots/chatbot2.html">Ask-Hifi L3</a>    
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Chatbot Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>

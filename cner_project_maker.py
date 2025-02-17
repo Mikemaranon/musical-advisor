@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 key_values = []
 entity_list = []
@@ -13,6 +14,9 @@ dataset = {
         "entities": [],
         "documents": []
     }
+
+def normalize_str(s):
+    return re.sub(r'\W+', '', s).lower()
 
 def load_key_values(file_path):
     for file_name in os.listdir(file_path):
@@ -34,21 +38,32 @@ def add_entities_to_dataset():
                 dataset["entities"].append({"category": entity})
     
 def extract_entities_from_text():
-
-    i = 0
-    
-    for document in document_list:
-        entities = {
+    for i, document in enumerate(document_list):
+        entities = [{
             "regionOffset": 0,
             "regionLength": len(document_list[document]),
-            "labels": [
-                # here we will add the labeled entities for each document
-            ]
-        }
+            "labels": []
+        }]
+        line_counter = 0
+        
         for entity in key_values[i]:
-            if entity in document_list[document]:
-                entities["labels"].append({"category": entity, "offset": document_list[document].index(entity), "length": len(entity)})
-                # error
+            print(key_values[i][entity])
+            if normalize_str(key_values[i][entity]) in normalize_str(document_list[document]):
+                print(entity)
+                try:
+                    specific_index = document_list[document].find(key_values[i][entity])
+                    if specific_index != -1:
+                        # Extrae el contenido hasta el índice del string específico
+                        content_until_specific_string = document_list[document][:specific_index]
+                        # Cuenta los saltos de línea en el contenido extraído
+                        line_counter = content_until_specific_string.count('\n')
+                    
+                    entities[0]["labels"].append({"category": entity, "offset": document_list[document].index(key_values[i][entity]) + line_counter, "length": len(key_values[i][entity])})
+                    line_counter = 0  # Reinicia el contador después de un try exitoso
+                    
+                except: 
+                    print("skipping this one... ", key_values[i][entity])
+                line_counter += document_list[document].count('\n')
         document_entry = {
             "location": document,
             "language": "es",
@@ -56,8 +71,7 @@ def extract_entities_from_text():
             "dataset": "Train"
         }
         dataset["documents"].append(document_entry)
-        i += 1
-
+    
 # Load the key values and documents
 load_key_values("Azure/azure-cner/src/key-values")
 load_documents("Azure/azure-cner/src/texts")
