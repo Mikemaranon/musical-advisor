@@ -11,6 +11,14 @@
     <style>
         .intent-container, .question-container {
             background-color: transparent;
+            box-shadow: none;
+        }
+        .chat-input {
+            width: 80%;
+            margin-left: 2%;
+        }
+        .send-button {
+            width: 12%;
         }
     </style>
 </head>
@@ -26,7 +34,6 @@
             <div class="chat-container">   
                 <div>
                     <div class="chat-box"></div>
-                    <button id="random-button" class="send-button">Random</button>
                     <input type="text" class="chat-input" id="chat-input" placeholder="Type a message...">
                     <button id="send-button" class="send-button">Send</button> 
                 </div>
