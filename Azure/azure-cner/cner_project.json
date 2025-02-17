@@ -1,0 +1,552 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "CustomEntityRecognition",
+        "storageInputContainerName": "articles",
+        "settings": {
+            "confidenceThreshold": 0
+        },
+        "projectName": "Ordenador-Entidades",
+        "multilingual": true,
+        "description": "",
+        "language": "es"
+    },
+    "assets": {
+        "projectKind": "CustomEntityRecognition",
+        "entities": [
+            {
+                "category": "name"
+            },
+            {
+                "category": "precio"
+            },
+            {
+                "category": "url"
+            },
+            {
+                "category": "type"
+            },
+            {
+                "category": "cuerpo"
+            },
+            {
+                "category": "tapa"
+            },
+            {
+                "category": "mástil"
+            },
+            {
+                "category": "diapasón"
+            },
+            {
+                "category": "trastes"
+            },
+            {
+                "category": "cejilla"
+            },
+            {
+                "category": "escala"
+            },
+            {
+                "category": "pastilla"
+            },
+            {
+                "category": "volumen"
+            },
+            {
+                "category": "trémolo"
+            },
+            {
+                "category": "afinación"
+            },
+            {
+                "category": "estuche"
+            },
+            {
+                "category": "color"
+            },
+            {
+                "category": "cuerdas"
+            },
+            {
+                "category": "pastillas"
+            },
+            {
+                "category": "puente"
+            },
+            {
+                "category": "clavijero"
+            },
+            {
+                "category": "golpeador"
+            },
+            {
+                "category": "pedal"
+            },
+            {
+                "category": "efectos"
+            },
+            {
+                "category": "fuente"
+            },
+            {
+                "category": "fabricado"
+            },
+            {
+                "category": "conector"
+            },
+            {
+                "category": "cable"
+            },
+            {
+                "category": "aislante"
+            },
+            {
+                "category": "preamplificador"
+            },
+            {
+                "category": "nut"
+            },
+            {
+                "category": "roseta"
+            },
+            {
+                "category": "perfil"
+            }
+        ],
+        "documents": [
+            {
+                "location": "texto_1.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 2566,
+                    "labels": [
+                        {
+                            "category": "precio",
+                            "offset": 2456,
+                            "length": 6
+                        },
+                        {
+                            "category": "cuerpo",
+                            "offset": 2241,
+                            "length": 6
+                        },
+                        {
+                            "category": "tapa",
+                            "offset": 868,
+                            "length": 4
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 1543,
+                            "length": 6
+                        },
+                        {
+                            "category": "trastes",
+                            "offset": 1224,
+                            "length": 7
+                        },
+                        {
+                            "category": "escala",
+                            "offset": 1191,
+                            "length": 6
+                        },
+                        {
+                            "category": "pastilla",
+                            "offset": 2124,
+                            "length": 8
+                        },
+                        {
+                            "category": "afinación",
+                            "offset": 1434,
+                            "length": 9
+                        },
+                        {
+                            "category": "estuche",
+                            "offset": 405,
+                            "length": 7
+                        },
+                        {
+                            "category": "color",
+                            "offset": 273,
+                            "length": 5
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_10.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1314,
+                    "labels": [
+                        {
+                            "category": "precio",
+                            "offset": 1165,
+                            "length": 6
+                        },
+                        {
+                            "category": "tapa",
+                            "offset": 191,
+                            "length": 4
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 265,
+                            "length": 6
+                        },
+                        {
+                            "category": "diapasón",
+                            "offset": 350,
+                            "length": 8
+                        },
+                        {
+                            "category": "escala",
+                            "offset": 994,
+                            "length": 6
+                        },
+                        {
+                            "category": "trastes",
+                            "offset": 386,
+                            "length": 7
+                        },
+                        {
+                            "category": "pastillas",
+                            "offset": 495,
+                            "length": 9
+                        },
+                        {
+                            "category": "volumen",
+                            "offset": 677,
+                            "length": 7
+                        },
+                        {
+                            "category": "puente",
+                            "offset": 739,
+                            "length": 6
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_11.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1471,
+                    "labels": [
+                        {
+                            "category": "tapa",
+                            "offset": 1043,
+                            "length": 4
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 602,
+                            "length": 6
+                        },
+                        {
+                            "category": "diapasón",
+                            "offset": 1245,
+                            "length": 8
+                        },
+                        {
+                            "category": "puente",
+                            "offset": 677,
+                            "length": 6
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_2.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1934,
+                    "labels": [
+                        {
+                            "category": "pedal",
+                            "offset": 1115,
+                            "length": 5
+                        },
+                        {
+                            "category": "efectos",
+                            "offset": 710,
+                            "length": 7
+                        },
+                        {
+                            "category": "fuente",
+                            "offset": 1258,
+                            "length": 6
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_3.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 738,
+                    "labels": [
+                        {
+                            "category": "conector",
+                            "offset": 692,
+                            "length": 8
+                        },
+                        {
+                            "category": "aislante",
+                            "offset": 523,
+                            "length": 8
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_4.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1598,
+                    "labels": [
+                        {
+                            "category": "mástil",
+                            "offset": 536,
+                            "length": 6
+                        },
+                        {
+                            "category": "pastilla",
+                            "offset": 730,
+                            "length": 8
+                        },
+                        {
+                            "category": "puente",
+                            "offset": 617,
+                            "length": 6
+                        },
+                        {
+                            "category": "clavijero",
+                            "offset": 1066,
+                            "length": 9
+                        },
+                        {
+                            "category": "color",
+                            "offset": 1258,
+                            "length": 5
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_5.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1377,
+                    "labels": [
+                        {
+                            "category": "trastes",
+                            "offset": 561,
+                            "length": 7
+                        },
+                        {
+                            "category": "nut",
+                            "offset": 1072,
+                            "length": 3
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_6.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1365,
+                    "labels": [
+                        {
+                            "category": "cuerpo",
+                            "offset": 400,
+                            "length": 6
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 423,
+                            "length": 6
+                        },
+                        {
+                            "category": "trastes",
+                            "offset": 636,
+                            "length": 7
+                        },
+                        {
+                            "category": "pastillas",
+                            "offset": 703,
+                            "length": 9
+                        },
+                        {
+                            "category": "puente",
+                            "offset": 775,
+                            "length": 6
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_7.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1638,
+                    "labels": [
+                        {
+                            "category": "pastilla",
+                            "offset": 364,
+                            "length": 8
+                        },
+                        {
+                            "category": "cuerpo",
+                            "offset": 225,
+                            "length": 6
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 438,
+                            "length": 6
+                        },
+                        {
+                            "category": "diapasón",
+                            "offset": 504,
+                            "length": 8
+                        },
+                        {
+                            "category": "escala",
+                            "offset": 628,
+                            "length": 6
+                        },
+                        {
+                            "category": "cejilla",
+                            "offset": 665,
+                            "length": 7
+                        },
+                        {
+                            "category": "roseta",
+                            "offset": 792,
+                            "length": 6
+                        },
+                        {
+                            "category": "preamplificador",
+                            "offset": 944,
+                            "length": 15
+                        },
+                        {
+                            "category": "afinación",
+                            "offset": 1115,
+                            "length": 9
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_8.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1579,
+                    "labels": [
+                        {
+                            "category": "cuerpo",
+                            "offset": 1086,
+                            "length": 6
+                        },
+                        {
+                            "category": "cuerdas",
+                            "offset": 748,
+                            "length": 7
+                        },
+                        {
+                            "category": "mástil",
+                            "offset": 851,
+                            "length": 6
+                        },
+                        {
+                            "category": "trastes",
+                            "offset": 604,
+                            "length": 7
+                        },
+                        {
+                            "category": "escala",
+                            "offset": 762,
+                            "length": 6
+                        },
+                        {
+                            "category": "tapa",
+                            "offset": 439,
+                            "length": 4
+                        },
+                        {
+                            "category": "perfil",
+                            "offset": 648,
+                            "length": 6
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            },
+            {
+                "location": "texto_9.txt",
+                "language": "es",
+                "entities": {
+                    "regionOffset": 0,
+                    "regionLength": 1154,
+                    "labels": [
+                        {
+                            "category": "mástil",
+                            "offset": 204,
+                            "length": 6
+                        },
+                        {
+                            "category": "puente",
+                            "offset": 541,
+                            "length": 6
+                        },
+                        {
+                            "category": "cuerpo",
+                            "offset": 135,
+                            "length": 6
+                        },
+                        {
+                            "category": "diapasón",
+                            "offset": 285,
+                            "length": 8
+                        },
+                        {
+                            "category": "trastes",
+                            "offset": 355,
+                            "length": 7
+                        },
+                        {
+                            "category": "golpeador",
+                            "offset": 778,
+                            "length": 9
+                        }
+                    ]
+                },
+                "dataset": "Train"
+            }
+        ]
+    }
+}

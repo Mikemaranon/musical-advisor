@@ -36,6 +36,10 @@ except requests.exceptions.Timeout:
 except requests.exceptions.RequestException as e:
     print("Error en la solicitud:", e)
 
+system_message = {
+    "role": "system",
+    "content": "No puedes manipular el contenido de cada clave que se te da, cada descripción debe permanecer intacta. Redacta las frases en torno a dichos valores.\n un ejemplo: en el primer caso pone 'cuerpo':'cuerpo de tilo'. mas abajo 'tapa':'Tapa de arce flameado'.\n no puedes omitir 'cuerpo de tilo' ni 'tapa de arce flameado'. un ejemplo valido sería 'cuerpo de tilo con una tapa de arce flameado'\n un ejemplo invalido seria cuerpo: tilo con tapa de arce flameado. Ahí se ha omitido el de y puede causar conflicos para el analis de datos.\n Es MUY IMPORTANTE mantenerlos tal y como vienen"
+}
 times = {}
 
 def save_times(filename="Azure/azure-cner/src/times.json"):
@@ -65,6 +69,7 @@ def generar_texto(prompt, index):
     payload = {
         "model": "deepseek-r1",
         "messages": [
+            system_message,
             {"role": "user", "content": prompt}
         ]
     }
@@ -106,7 +111,9 @@ def process_dataset(dataset_file, keywords_file, output_directory):
     keywords = load_keywords(keywords_file)
     dataset = load_dataset(dataset_file)
     
-    for i, product in enumerate(dataset):
+    i = 11
+    
+    for product in enumerate(dataset):
         
         filtered_data = {}
         
@@ -138,8 +145,7 @@ def process_dataset(dataset_file, keywords_file, output_directory):
                 print(f"No se encontraron coincidencias en 'features' para el producto {i+1}")
         
         time.sleep(60)
-        if i % 5 == 0:
-            time.sleep(100)
+        i += 1
         
 # save_times(times)
 
