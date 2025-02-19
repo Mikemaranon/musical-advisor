@@ -1,0 +1,76 @@
+{
+    "guitarra": [
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "montaje", "estructura", "cejilla",
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", "palisandro", "caoba",
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
+    ],
+    "signature": [
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "montaje", "estructura", "cejilla",
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", "palisandro", "caoba",
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
+    ],
+    "pedal": [
+        "pedal", "efectos", "pedalera", "sonido", "controlador", "potencia", "bypass", 
+        "fuente", "fabricado"
+    ],
+    "cable": [
+        "cable", "conector", "corriente", "alimentación", "aislante"
+    ],
+    "amplificador": [
+        "amplificador", "sonido", "controlador", "potencia", "instrumento"
+    ],
+    "bajo": [
+        "pastillas", "bobina", "golpeador", "varillas", "tapa", "Forma de mástil",
+        "estuche", "oientación", "escudo", "tensor", "pickguard", "selector",
+        "rosca", "cabezal", "trémolo", "nut", "montaje", "estructura", "cejilla",
+        "tensión", "roseta", "hueso", "silleta", "varillaje", "muelles", 
+        "pivote", "tornillos", "barniz", "bloques", "refuerzo", "pastilla",
+        "mecanismo", "rejilla", "difusor", "reflector", "chapa", "labio", 
+        "muelle", "base", "regulador", "guía", "pintura", "puerto", 
+        "disipador", "laca", "tapón", "modulador", "anillo", "ajuste", 
+        "dimensiones", "adhesivo", "protector", "cubierta", "bisagra", 
+        "retenedor", "volumen", "curvatura", "perfil", "tubo_resonancia", 
+        "canal", "mástil", "cuerpo", "diapasón", "escala", "color", 
+        "cuerdas", "trastes", "puente", "clavijero", "resonador", 
+        "afinación", "bobina", "golpeador", "varillas", "estuche", "preamplificador"
+    ],
+    "piano": [
+        "teclas", "martillos", "pedales", 
+        "caja", "material"
+    ],
+    "teclado": [
+        "teclas", "sonidos", "cuerda_material", "pedales", 
+        "material_teclas", "caja", "madera"
+    ],
+    "trompeta": [
+        "válvulas", "boquilla", "campana", "llaves", "deslizante", 
+        "embocadura"
+    ],
+    "batería": [
+        "parche", "casco", "tambores", "pedales", "baquetas", 
+        "sordina"
+    ],
+    "saxofón": [
+        "octavas", "lengüeta", "tubo", "pabellón", "estuche"
+    ]
+}

@@ -28,24 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function sendMessage() {
         const message = chatInput.value.trim();
-        switch(model) {
-            case 'L1-L2':
-                if (message !== "") {
-                    addMessageToChat('user', message);
-                    chatInput.value = "";
-                    sendMessageToModel_L1(message);
-                }
-                break;
-            case 'L3': 
-            if (message !== "") {
-                    addMessageToChat('user', message);
-                    chatInput.value = "";
-                    sendMessageToModel_L3(message);
-                }   
-                break;
-            defaul: console.warn("no model detected!")
+        if (message !== "") {
+            addMessageToChat('user', message);
+            chatInput.value = "";
+            sendMessageToModel_L1(message);
         }
-        
     }
 
     function addMessageToChat(sender, message, isHTML = false) {
@@ -171,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 const botResponse = data.result?.prediction?.topIntent || "No se pudo determinar la intención.";
                 addMessageToChat('analysis', "intención: " + formatAnalysisResponse(botResponse), true);
+                return botResponse
             } else {
                 console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
                 addMessageToChat('analysis', `Error en la respuesta de Azure: ${data?.error?.message}`);
@@ -236,63 +224,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Error al conectar con Azure:", error);
             addMessageToChat('bot', "Error al obtener la respuesta.");
         }
-    } 
-
-    async function sendMessageToModel_L3(message) {
-        const endpoint = "https://languaje-service-mike-tajamar.cognitiveservices.azure.com/language/analyze-text/jobs?api-version=2022-10-01-preview";
-        const subscriptionKey = "AaOOJMzfudw2A0CXdT9t37SnuQ2MJlcaL8oaOiEplqLM8IDD1OrAJQQJ99BBACYeBjFXJ3w3AAAaACOGmY72";
-    
-        const requestBody = {
-            "tasks": [
-                {
-                    "kind": "CustomEntityRecognition",
-                    "parameters": {
-                        "projectName": "Ask-Hifi-L3",
-                        "deploymentName": "Ask-Hifi-L3",
-                        "stringIndexType": "TextElement_v8"
-                    }
-                }
-            ],
-            "displayName": "CustomTextPortal_CustomEntityRecognition",
-            "analysisInput": {
-                "documents": [
-                    {
-                        "id": "document_CustomEntityRecognition",
-                        "text": message,
-                        "language": "es"  // Cambia "en" si necesitas otro idioma
-                    }
-                ]
-            }
-        };
-    
-        console.log("Enviando petición a Azure con:", JSON.stringify(requestBody, null, 2));
-    
-        try {
-            const response = await fetch(endpoint, {
-                method: "POST",
-                headers: {
-                    "Ocp-Apim-Subscription-Key": subscriptionKey,
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(requestBody)
-            });
-    
-            const data = await response.json();
-            console.log("Respuesta recibida de Azure:", data);
-    
-            if (response.ok) {
-                const botResponse = data.answers?.[0]?.answer || "No tengo una respuesta para eso.";
-                //addMessageToChat('bot', botResponse);
-                const formattedResponse = formatBotResponse(botResponse);
-                addMessageToChat('bot', formattedResponse, true);
-            } else {
-                console.error(`Error en la API de Azure: ${response.status} - ${data?.error?.message}`);
-                addMessageToChat('bot', `Error en la respuesta de Azure: ${data?.error?.message}`);
-            }
-    
-        } catch (error) {
-            console.error("Error al conectar con Azure:", error);
-            addMessageToChat('bot', "Error al obtener la respuesta.");
-        }
-    }    
+    }
 });

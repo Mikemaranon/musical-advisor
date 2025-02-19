@@ -3,7 +3,6 @@ arce
 Color Negro
 Acabado Natural
 Cuerpo de Acacia
-Acacia
 24 trastes
 golpeador
 aliso
